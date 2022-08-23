@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"name": "idle_production_capacity",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "LONG": -61.37462, "LAT": -35.19733, "ADMIN": "Argentina", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ -61.37462, -35.19733 ] } },
+{ "type": "Feature", "properties": { "LONG": 89.907157, "LAT": 22.802551, "ADMIN": "Bangladesh", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ 89.90716, 22.80255 ] } },
+{ "type": "Feature", "properties": { "LONG": -50.712412, "LAT": -15.820106, "ADMIN": "Brazil", "FACTORIES": 3 }, "geometry": { "type": "Point", "coordinates": [ -50.71241, -15.82011 ] } },
+{ "type": "Feature", "properties": { "LONG": -70.177042, "LAT": -27.497846, "ADMIN": "Chile", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ -70.17704, -27.49785 ] } },
+{ "type": "Feature", "properties": { "LONG": 107.397574, "LAT": 32.7465, "ADMIN": "China", "FACTORIES": 34 }, "geometry": { "type": "Point", "coordinates": [ 107.39757, 32.7465 ] } },
+{ "type": "Feature", "properties": { "LONG": -77.632778, "LAT": 21.37045, "ADMIN": "Cuba", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ -77.63278, 21.37045 ] } },
+{ "type": "Feature", "properties": { "LONG": 28.165724, "LAT": 25.593701, "ADMIN": "Egypt", "FACTORIES": 3 }, "geometry": { "type": "Point", "coordinates": [ 28.16572, 25.5937 ] } },
+{ "type": "Feature", "properties": { "LONG": 78.064206, "LAT": 20.027469, "ADMIN": "India", "FACTORIES": 55 }, "geometry": { "type": "Point", "coordinates": [ 78.06421, 20.02747 ] } },
+{ "type": "Feature", "properties": { "LONG": 121.689738, "LAT": -3.333361, "ADMIN": "Indonesia", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ 121.68974, -3.33336 ] } },
+{ "type": "Feature", "properties": { "LONG": 102.45047, "LAT": 4.324869, "ADMIN": "Malaysia", "FACTORIES": 2 }, "geometry": { "type": "Point", "coordinates": [ 102.45047, 4.32487 ] } },
+{ "type": "Feature", "properties": { "LONG": -8.038684, "LAT": 31.376235, "ADMIN": "Morocco", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ -8.03868, 31.37624 ] } },
+{ "type": "Feature", "properties": { "LONG": -15.23425, "LAT": 15.168632, "ADMIN": "Senegal", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ -15.23425, 15.16863 ] } },
+{ "type": "Feature", "properties": { "LONG": 24.015915, "LAT": -31.621171, "ADMIN": "South Africa", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ 24.01591, -31.62117 ] } },
+{ "type": "Feature", "properties": { "LONG": 128.553619, "LAT": 36.684745, "ADMIN": "South Korea", "FACTORIES": 9 }, "geometry": { "type": "Point", "coordinates": [ 128.55362, 36.68474 ] } },
+{ "type": "Feature", "properties": { "LONG": 102.133945, "LAT": 16.237474, "ADMIN": "Thailand", "FACTORIES": 1 }, "geometry": { "type": "Point", "coordinates": [ 102.13394, 16.23747 ] } },
+{ "type": "Feature", "properties": { "LONG": 9.819988, "LAT": 32.931972, "ADMIN": "Tunisia", "FACTORIES": 2 }, "geometry": { "type": "Point", "coordinates": [ 9.81999, 32.93197 ] } },
+{ "type": "Feature", "properties": { "LONG": 105.321837, "LAT": 20.964586, "ADMIN": "Vietnam", "FACTORIES": 3 }, "geometry": { "type": "Point", "coordinates": [ 105.32184, 20.96459 ] } }
+]
+}
