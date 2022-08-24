@@ -30,8 +30,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              },
+              {
+                layer: 'who_spokes',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              },
+              {
+                layer: 'who_spokes',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'vaxrates',
@@ -55,8 +97,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:'',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              },
+              {
+                layer: 'who_spokes',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              },
+              {
+                layer: 'who_spokes',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'reasons',
