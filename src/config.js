@@ -58,19 +58,19 @@ var config = {
                   opacity: 1
               },
               {
-                  layer: 'support_trips_waiver',
-                  opacity: 0
-              },
-              {
                   layer: 'idle_production_capacity',
                   opacity: 0
               },
               {
-                  layer: 'who_spokes',
+                  layer: 'support_trips_waiver',
                   opacity: 0
               },
               {
-                layer: 'who_instruction',
+                  layer: 'who_instruction',
+                  opacity: 0
+              },
+              {
+                layer: 'who_spokes',
                 opacity: 0
               }
             ]
