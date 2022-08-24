@@ -158,8 +158,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'efforts',
@@ -177,8 +219,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'tripsintro',
@@ -196,8 +280,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'tripsmap1',
@@ -216,16 +342,48 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'support_trips_waiver',
-                    opacity: 1
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 1
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
             ],
             onChapterExit: [
-                {
-                    layer: 'support_trips_waiver',
-                    opacity: 0
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
             ]
         },
         {
@@ -245,16 +403,48 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'idle_production_capacity',
-                    opacity: 1
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 1
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
             ],
             onChapterExit: [
-                {
-                    layer: 'idle_production_capacity',
-                    opacity: 0
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
             ]
         },
         {
@@ -273,8 +463,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'tripsdefeat',
@@ -292,8 +524,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'ctap',
@@ -311,8 +585,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'techtransfer',
@@ -330,8 +646,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'techspokes',
@@ -350,15 +708,49 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'who_spokes',
-                    opacity: 1
-                },
-                {
-                    layer: 'who_instruction',
-                    opacity: 1
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 1
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 1
+              }
             ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'technih',
@@ -377,24 +769,48 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'who_spokes',
-                    opacity: 1
-                },
-                {
-                    layer: 'who_instruction',
-                    opacity: 1
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 1
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 1
+              }
             ],
             onChapterExit: [
-                {
-                    layer: 'who_spokes',
-                    opacity: 0
-                },
-                {
-                    layer: 'who_instruction',
-                    opacity: 0
-                }
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
             ]
         },
         {
@@ -413,8 +829,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'biden2',
@@ -432,8 +890,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'biden3',
@@ -451,8 +951,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'cuba',
@@ -470,8 +1012,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'corbevax',
@@ -489,8 +1073,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         },
         {
             id: 'conclusion',
@@ -508,8 +1134,50 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ],
+            onChapterExit: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 1
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                layer: 'who_instruction',
+                opacity: 0
+              }
+            ]
         }
     ]
 };
