@@ -332,16 +332,7 @@ var config = {
                   opacity: 1
               }
             ],
-            onChapterExit: [
-              {
-                  layer: 'who_spokes',
-                  opacity: 0
-              },
-              {
-                  layer: 'who_instruction',
-                  opacity: 0
-              }
-            ]
+            onChapterExit: []
         },
         {
             id: 'technih',
