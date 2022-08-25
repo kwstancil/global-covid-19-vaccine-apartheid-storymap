@@ -298,6 +298,14 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 1
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -386,6 +394,14 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 1
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
