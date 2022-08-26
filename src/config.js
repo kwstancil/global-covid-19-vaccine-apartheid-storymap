@@ -33,7 +33,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
