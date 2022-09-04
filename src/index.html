@@ -529,7 +529,7 @@ map.on('mousemove','vaccination_rates', (e) => {
   popup
     .setLngLat(e.lngLat) // the location of the cursor
     .setHTML('<b>' + props.BRK_NAME + '</b><br>At least one vaccination: ' + props.vaccinations_people_vaccinated_per_hundred + '%<br>Fully vaccinated: ' + props.vaccinations_people_fully_vaccinated_per_hundred + '%') // feed the popup the prop info
-    .addTo(map) // add the popup to the map
+    //.addTo(map) // add the popup to the map
 
 });
 

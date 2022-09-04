@@ -33,7 +33,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -42,7 +42,7 @@ var config = {
             id: 'vaxrates',
             alignment: 'full',
             hidden: false,
-            title: 'Share of Population Partially/Fully Inoculated and Number of Booster Shots Administered Per 100 People in Each Country Over Time',
+            title: 'Share of Population Fully Inoculated in Each Country Over Time',
             image: '',
             description: '<iframe width=100% height=400px src="https://api.mapbox.com/styles/v1/kwstancil/cl741bb3i000r14nvyq5cp0g0.html?title=false&access_token=pk.eyJ1Ijoia3dzdGFuY2lsIiwiYSI6ImNrcWJ1ZGM5YzB1OHgzMG1vbDF5d3B3aXIifQ.gCIQHNVuEDcsG0l2wb7x5A&zoomwheel=false#1.93/6.69/28.81" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
             location: {
