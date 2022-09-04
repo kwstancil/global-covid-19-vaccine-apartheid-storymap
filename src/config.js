@@ -23,7 +23,7 @@ var config = {
             description: 'Comparing Covid-19 vaccination rates around the world over time reveals glaring and persistent gaps in access to lifesaving shots amid a pandemic that has caused more than 15 million deaths. While high-income countries discard doses, billions of people in low-income countries remain completely unprotected.<p>This injustice, which public health advocates have labeled "vaccine apartheid," is deadly. New research estimates that in 2021, the first year of the vaccine rollout, jabs saved roughly 20 million lives. However, hundreds of thousands of additional deaths could have been avoided—and many more can still be prevented—with greater vaccine equity.<p>Epidemiologists have consistently warned that the longer SARS-CoV-2 circulates and mutates, the greater the chances a vaccine-resistant variant emerges, making the swift and adequate inoculation of the global population an urgent necessity to protect the well-being of people everywhere.<p>Just how unequal has vaccine access been? Keep scrolling to find out.',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
@@ -42,12 +42,12 @@ var config = {
             id: 'vaxrates',
             alignment: 'full',
             hidden: false,
-            title: 'Share of Population Fully Inoculated in Each Country Over Time',
+            title: 'Share of Population Fully Vaccinated in Each Country Over Time',
             image: '',
             description: '<iframe width=100% height=400px src="https://api.mapbox.com/styles/v1/kwstancil/cl741bb3i000r14nvyq5cp0g0.html?title=false&access_token=pk.eyJ1Ijoia3dzdGFuY2lsIiwiYSI6ImNrcWJ1ZGM5YzB1OHgzMG1vbDF5d3B3aXIifQ.gCIQHNVuEDcsG0l2wb7x5A&zoomwheel=false#1.93/6.69/28.81" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0,
                 // flyTo additional controls-
@@ -77,7 +77,7 @@ var config = {
             description: 'There are two key sources of vaccine inequality.<p>1) Inequitable distribution, or dose hoarding by wealthy nations: Rich governments quickly purchased far more shots than could possibly be administered to their own populations. As a result of this vaccine nationalism, millions of doses have expired and ended up in the trash.<p>2) Inefficient production, or knowledge hoarding by pharmaceutical corporations: Pharma giants have refused to share vaccine formulas and production blueprints with generic drugmakers. Big Pharma’s monopoly power over publicly funded tech and know-how has led to artificial scarcity, price-gouging, and attendant record-breaking profits—prolonging needless suffering while turning several executives into billionaires.',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
@@ -101,7 +101,7 @@ var config = {
             description: 'Efforts to increase access to vaccines have primarily revolved around two distinct approaches.<p>1) Distribution angle: COVAX, the United Nations-backed public-private partnership to encourage vaccine donations to poor governments, has fallen far short of its own targets, leading critics to declare the charity model a failure.<p>2) Production angle: A campaign to compel the World Trade Organization (WTO) to temporarily remove intellectual property (IP) barriers was recently defeated by a handful of rich governments, but several other initiatives are underway at the World Health Organization (WHO) and at national and cross-national levels to share vaccine formulas, transfer technology, and increase generic manufacturing.',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
@@ -149,7 +149,7 @@ var config = {
             description: 'More than 100 nations, including the vast majority of the Global South, endorsed the proposal to temporarily waive the WTO’s corporate-friendly Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement. Trreating medical tools designed to defeat Covid-19 as global public goods was also the preference of a majority of voters in high-income countries, according to polls.<p>However, a handful of Big Pharma-aligned policymakers—most of them from highly vaccinated parts of Europe—spent nearly 21 months stonewalling the popular measure, which needed unanimous support from the WTO’s 164 members to pass.<p>During that time, the global death toll soared by more than 12 million. Excess mortality—an estimate of the difference in the number of deaths that occur amid a crisis compared with what would have been expected under “normal” conditions—during the coronavirus pandemic has been four times higher in poorer countries than rich ones.<p>“Millions have died while the governments of rich countries have been bickering over monopoly rights for Covid-19 vaccines,” Nick Dearden, the director of Global Justice Now, said in July 2021. “Every one of those deaths is a mark of shame for the governments of countries like the U.K. and Germany who have protected patents over human lives.”<p>INSERT KEY HERE',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
@@ -182,7 +182,7 @@ var config = {
             description: 'In a thinly veiled attempt to defend Big Pharma’s extremely profitable IP monopolies, industry lobbyists and their allies baselessly claimed that the TRIPS waiver wouldn’t lead to an increase the worldwide supply of vaccines because generic producers in developing countries lack the capacity to replicate the mRNA manufacturing process. This racist talking point persisted even after experts identified 120 firms in Africa, Asia, and Latin America capable of making jabs if only Pfizer-BioNTech and Moderna would share vaccine recipes and tech—none of which would exist in the first place without years of taxpayer-funded research.<P>Hover over the purple circles to see how many factories are lying idle as a result of corporate profiteering.<p>INSERT INTERACTIVITY HERE',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.4,
                 pitch: 0,
                 bearing: 0
             },
@@ -192,7 +192,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               },
               {
                   layer: 'idle_production_capacity',
@@ -225,7 +225,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -239,7 +239,7 @@ var config = {
             description: 'Given that expanding supply is still necessary to achieve equitable global access to tests, treatments, and vaccines—especially as primary series and booster shot eligibility increases and next-generation jabs tailored to new variants emerge—hundreds of civil society groups have urged governments to “take immediate actions to bypass the WTO’s prioritization of pharmaceutical monopolies over human lives.”',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
@@ -249,7 +249,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -273,7 +273,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -297,7 +297,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               },
               {
                   layer: 'who_spokes',
@@ -329,7 +329,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               },
               {
                   layer: 'who_spokes',
@@ -351,7 +351,7 @@ var config = {
             description: 'In July 2022, U.S. government scientists from the National Institutes of Allergy and Infectious Diseases (NIAID) agreed to share technical know-how related to the development of next-generation vaccines and treatments with Afrigen. NIAID pioneered the use of mRNA and its parent organization, NIH, co-invented Moderna’s Covid-19 vaccine. Together, NIAID and Afrigen seek to expedite the production of mRNA vaccines—not only to combat the ongoing coronavirus pandemic but also to address other infectious diseases and cancer.<p>The production of mRNA vaccines “is very different,” Zain Rizvi, research director with Public Citizen’s Access to Medicines Program, explains. “It requires far less physical space, it is far less capital intensive, the processes are shorter and simpler than traditional vaccine manufacturing. A lot more manufacturers can do it.”<p>“You can setup a new production line for only around $60 million,” he continues. “That potential has not been fully realized because a few corporations have dictated who can make mRNA vaccines, how they can make them, where they can make them, and at what price.”<p>Hover over the orange countries to see the names of participating manufacturers.<p>REPEAT INTERACTIVITY HERE',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
@@ -361,7 +361,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               },
               {
                   layer: 'who_spokes',
@@ -393,7 +393,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               },
               {
                   layer: 'who_spokes',
@@ -425,7 +425,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -449,7 +449,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -473,7 +473,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -497,7 +497,7 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -511,7 +511,7 @@ var config = {
             description: 'Existing IP rules and proposals for more democratic frameworks are matters of life-and-death. Nobody is safe until everybody is safe!<p>Charity is not a substitute for justice. Low-income nations don’t want, and shouldn’t be forced, to wait for rich countries’ leftovers. They want, and ought to have, access to the publicly financed knowledge and technology needed to produce doses and boost the global supply of life-saving medicines.<p>International solidarity is indispensable to defeating Covid-19 vaccine apartheid, which shows few signs of abating as rich countries have already started hoarding the Omicron-specific boosters over which Moderna claims exclusive control.<p>The same underlying dynamics have given rise to other manifestations of global health inequality and threaten to reproduce uneven access to promising Covid-19 treatments such as Pfizer’s Paxlovid, and key resources in general, including the clean energy technologies that must be deployed as rapidly and broadly as possible to stave off the most catastrophic effects of the fossil fuel-driven climate crisis.<p>“Never again should a pharmaceutical corporation receive huge sums of funding without some protection built in for the public interest,” Rizvi argues. “Governments can require that corporations, as a condition of accepting funding, set reasonable prices, provide doses to lower and middle-income countries, share technology with international institutions like the World Health Organization.”<p>“These were all possibilities, but very few of them were actually realized because governments did not make those choices,” he adds. “And so that, I hope, is one of the lessons we draw from this pandemic. It’s about how we let billions of dollars in public funding translate into tens of billions of dollars of private profits.”',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 2,
+                zoom: 1.2,
                 pitch: 0,
                 bearing: 0
             },
