@@ -351,7 +351,7 @@ var config = {
             description: 'In July 2022, U.S. government scientists from the National Institutes of Allergy and Infectious Diseases (NIAID) agreed to share technical know-how related to the development of next-generation vaccines and treatments with Afrigen. NIAID pioneered the use of mRNA and its parent organization, NIH, co-invented Moderna’s Covid-19 vaccine. Together, NIAID and Afrigen seek to expedite the production of mRNA vaccines—not only to combat the ongoing coronavirus pandemic but also to address other infectious diseases and cancer.<p>The production of mRNA vaccines “is very different,” Zain Rizvi, research director with Public Citizen’s Access to Medicines Program, explains. “It requires far less physical space, it is far less capital intensive, the processes are shorter and simpler than traditional vaccine manufacturing. A lot more manufacturers can do it.”<p>“You can setup a new production line for only around $60 million,” he continues. “That potential has not been fully realized because a few corporations have dictated who can make mRNA vaccines, how they can make them, where they can make them, and at what price.”<p>Hover over the orange countries to see the names of participating manufacturers.<p>REPEAT INTERACTIVITY HERE',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.25,
                 pitch: 0,
                 bearing: 0
             },
@@ -511,7 +511,7 @@ var config = {
             description: 'Existing IP rules and proposals for more democratic frameworks are matters of life-and-death. Nobody is safe until everybody is safe!<p>Charity is not a substitute for justice. Low-income nations don’t want, and shouldn’t be forced, to wait for rich countries’ leftovers. They want, and ought to have, access to the publicly financed knowledge and technology needed to produce doses and boost the global supply of life-saving medicines.<p>International solidarity is indispensable to defeating Covid-19 vaccine apartheid, which shows few signs of abating as rich countries have already started hoarding the Omicron-specific boosters over which Moderna claims exclusive control.<p>The same underlying dynamics have given rise to other manifestations of global health inequality and threaten to reproduce uneven access to promising Covid-19 treatments such as Pfizer’s Paxlovid, and key resources in general, including the clean energy technologies that must be deployed as rapidly and broadly as possible to stave off the most catastrophic effects of the fossil fuel-driven climate crisis.<p>“Never again should a pharmaceutical corporation receive huge sums of funding without some protection built in for the public interest,” Rizvi argues. “Governments can require that corporations, as a condition of accepting funding, set reasonable prices, provide doses to lower and middle-income countries, share technology with international institutions like the World Health Organization.”<p>“These were all possibilities, but very few of them were actually realized because governments did not make those choices,” he adds. “And so that, I hope, is one of the lessons we draw from this pandemic. It’s about how we let billions of dollars in public funding translate into tens of billions of dollars of private profits.”',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.25,
                 pitch: 0,
                 bearing: 0
             },
