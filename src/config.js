@@ -319,7 +319,7 @@ var config = {
             description: 'As of April 2022, 14 manufacturers in LMICs have been named as “spokes,” or recipients of mRNA technology and training from the Afrigen hub. In addition, the WHO has teamed up with South Korea to create a global biomanufacturing teaching facility that will showcase best practices and complement specific trainings developed by researchers involved in the South African project.<p>Hover over the orange countries to see the names of participating manufacturers.<p>INSERT INTERACTIVITY HERE',
             location: {
                 center: [94.59787, 31.01989],
-                zoom: 2.99,
+                zoom: 2.1,
                 pitch: 60,
                 bearing: -104
             },
