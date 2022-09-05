@@ -263,7 +263,7 @@ var config = {
             description: 'In May 2020, a few months before the TRIPS waiver proposal was first unveiled, the WHO and its partners launched the Covid-19 Technology Access Pool (C-TAP) to facilitate the sharing of IP, knowledge, and clinical data. The goal of C-TAP is to ramp up production through voluntary licensing agreements and the exchange of know-how between the developers of vaccines, tests, and treatments, on the one hand, and qualified manufacturers with untapped capacity, on the other.<p>Hampered by virtually nonexistent private sector participation, the first transparent, global, non-exclusive license for a Covid-19 medical tool was finalized in November 2021, when the Spanish National Research Council agreed to share the serological antibody technology underlying multiple tests.<p>In May 2022, the U.S. National Institutes of Health (NIH) agreed to share 11 technologies—including the stabilized spike protein used in currently available Covid-19 vaccines—with manufacturers from around the world via the repository.',
             location: {
                 center: [8.70594, 46.17994],
-                zoom: 4.9,
+                zoom: 5,
                 pitch: 0,
                 bearing: 0
             },
