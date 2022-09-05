@@ -23,7 +23,7 @@ var config = {
             description: 'Comparing Covid-19 vaccination rates around the world over time reveals glaring and persistent gaps in access to lifesaving shots amid a pandemic that has caused more than 15 million deaths. While high-income countries discard doses, billions of people in low-income countries remain completely unprotected.<p>This injustice, which public health advocates have labeled "vaccine apartheid," is deadly. New research estimates that in 2021, the first year of the vaccine rollout, jabs saved roughly 20 million lives. However, hundreds of thousands of additional deaths could have been avoided—and many more can still be prevented—with greater vaccine equity.<p>Epidemiologists have consistently warned that the longer SARS-CoV-2 circulates and mutates, the greater the chances a vaccine-resistant variant emerges, making the swift and adequate inoculation of the global population an urgent necessity to protect the well-being of people everywhere.<p>Just how unequal has vaccine access been? Keep scrolling to find out.',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.25,
                 pitch: 0,
                 bearing: 0
             },
@@ -47,7 +47,7 @@ var config = {
             description: '<iframe width=100% height=400px src="https://api.mapbox.com/styles/v1/kwstancil/cl741bb3i000r14nvyq5cp0g0.html?title=false&access_token=pk.eyJ1Ijoia3dzdGFuY2lsIiwiYSI6ImNrcWJ1ZGM5YzB1OHgzMG1vbDF5d3B3aXIifQ.gCIQHNVuEDcsG0l2wb7x5A&zoomwheel=false#1.93/6.69/28.81" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.25,
                 pitch: 0,
                 bearing: 0,
                 // flyTo additional controls-
@@ -77,7 +77,7 @@ var config = {
             description: 'There are two key sources of vaccine inequality.<p>1) Inequitable distribution, or dose hoarding by wealthy nations: Rich governments quickly purchased far more shots than could possibly be administered to their own populations. As a result of this vaccine nationalism, millions of doses have expired and ended up in the trash.<p>2) Inefficient production, or knowledge hoarding by pharmaceutical corporations: Pharma giants have refused to share vaccine formulas and production blueprints with generic drugmakers. Big Pharma’s monopoly power over publicly funded tech and know-how has led to artificial scarcity, price-gouging, and attendant record-breaking profits—prolonging needless suffering while turning several executives into billionaires.',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.25,
                 pitch: 0,
                 bearing: 0
             },
@@ -101,7 +101,7 @@ var config = {
             description: 'Efforts to increase access to vaccines have primarily revolved around two distinct approaches.<p>1) Distribution angle: COVAX, the United Nations-backed public-private partnership to encourage vaccine donations to poor governments, has fallen far short of its own targets, leading critics to declare the charity model a failure.<p>2) Production angle: A campaign to compel the World Trade Organization (WTO) to temporarily remove intellectual property (IP) barriers was recently defeated by a handful of rich governments, but several other initiatives are underway at the World Health Organization (WHO) and at national and cross-national levels to share vaccine formulas, transfer technology, and increase generic manufacturing.',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.25,
                 pitch: 0,
                 bearing: 0
             },
@@ -125,7 +125,7 @@ var config = {
             description: 'On October 2, 2020, India and South Africa introduced a motion at the WTO to suspend coronavirus-related patents and other IP barriers for the duration of the pandemic, which would enable generic drugmakers to expand the global supply of vaccines, tests, and treatments without fear of legal retribution.',
             location: {
                 center: [40.38602, -18.53467],
-                zoom: 3.25,
+                zoom: 2.4,
                 pitch: 0,
                 bearing: -21.3
             },
@@ -149,7 +149,7 @@ var config = {
             description: 'More than 100 nations, including the vast majority of the Global South, endorsed the proposal to temporarily waive the WTO’s corporate-friendly Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement. Trreating medical tools designed to defeat Covid-19 as global public goods was also the preference of a majority of voters in high-income countries, according to polls.<p>However, a handful of Big Pharma-aligned policymakers—most of them from highly vaccinated parts of Europe—spent nearly 21 months stonewalling the popular measure, which needed unanimous support from the WTO’s 164 members to pass.<p>During that time, the global death toll soared by more than 12 million. Excess mortality—an estimate of the difference in the number of deaths that occur amid a crisis compared with what would have been expected under “normal” conditions—during the coronavirus pandemic has been four times higher in poorer countries than rich ones.<p>“Millions have died while the governments of rich countries have been bickering over monopoly rights for Covid-19 vaccines,” Nick Dearden, the director of Global Justice Now, said in July 2021. “Every one of those deaths is a mark of shame for the governments of countries like the U.K. and Germany who have protected patents over human lives.”<p>INSERT KEY HERE',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.2,
+                zoom: 1.5,
                 pitch: 0,
                 bearing: 0
             },
@@ -182,7 +182,7 @@ var config = {
             description: 'In a thinly veiled attempt to defend Big Pharma’s extremely profitable IP monopolies, industry lobbyists and their allies baselessly claimed that the TRIPS waiver wouldn’t lead to an increase the worldwide supply of vaccines because generic producers in developing countries lack the capacity to replicate the mRNA manufacturing process. This racist talking point persisted even after experts identified 120 firms in Africa, Asia, and Latin America capable of making jabs if only Pfizer-BioNTech and Moderna would share vaccine recipes and tech—none of which would exist in the first place without years of taxpayer-funded research.<P>Hover over the purple circles to see how many factories are lying idle as a result of corporate profiteering.<p>INSERT INTERACTIVITY HERE',
             location: {
                 center: [10.55606, 35.19720],
-                zoom: 1.4,
+                zoom: 1.5,
                 pitch: 0,
                 bearing: 0
             },
