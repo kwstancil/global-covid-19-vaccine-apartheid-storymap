@@ -463,7 +463,7 @@ var config = {
             description: 'Cuba’s thriving public biotech sector, which has developed two highly effective vaccines despite the added challenges created by a 60 year-long U.S. blockade, provides a striking example of an alternative model for scientific research that puts people over profits. The island has begun exporting its homegrown doses and has agreed to share its recipes and technical information with impoverished nations abandoned by Big Pharma and wealthy countries, thus demonstrating the power of decommodified medicine.<p>Unlike the mRNA jabs produced by Pfizer and Moderna, Cuba opted to make vaccines that rely on a more traditional protein-based technology. These shots can be stored at room temperature, making distribution easier, especially in developing countries and remote areas that lack electricity.',
             location: {
                 center: [-74.94211, 23.07219 ],
-                zoom: 6,
+                zoom: 5,
                 pitch: 0,
                 bearing: 0
             },
