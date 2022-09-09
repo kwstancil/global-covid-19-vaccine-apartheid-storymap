@@ -10,7 +10,7 @@ var config = {
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps.
     title: 'Global Covid-19 Vaccine Apartheid',
-    subtitle: 'Why have only 20% of people in impoverished nations received at least one dose? And what’s being done to change that?',
+    subtitle: 'Why have less than 25% of people in impoverished nations received at least one dose? And what’s being done to change that?',
     byline: 'By Kenny Stancil',
     footer: 'Sources: Vaccination rates come courtesy of Our World in Data - see Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021); Information about whether governments support or oppose the TRIPS waiver proposal supplied by Doctors Without Borders; Data on untapped vaccine production potential compiled by Human Rights Watch and the AccessIBSA project. National boundaries and country centroids provided by Natural Earth and Gavin Rehkemper, respectively.<p>Photos (in descending order): MORE<p>Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
@@ -159,7 +159,12 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.7
+                  ]
               },
               {
                   layer: 'support_trips_waiver',

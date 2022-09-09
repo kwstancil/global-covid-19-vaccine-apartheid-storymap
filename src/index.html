@@ -368,34 +368,6 @@ map.on("load", function() {
         }
   });
 
-  // Add the second new layer
-  map.addLayer({
-    'id': 'support_trips_waiver',
-    'type': 'circle',
-    'source': {
-        'type': 'geojson',
-        'data': '../data/support_trips_waiver.geojson'
-    },
-    'opacity': 0,
-    'paint': {
-      'circle-color': [
-        'match',
-        ['get', 'TRIPS_WAIVER'],
-        0,
-        'red',
-        1,
-        'green',
-        2,
-        'yellow',
-        3,
-        'orange',
-        /* other */ '#ccc'
-      ],
-      'circle-stroke-color': '#4d4d4d',
-      'circle-stroke-width': 0.5
-    }
-  });
-
     if (config.use3dTerrain) {
         map.addSource('mapbox-dem', {
             'type': 'raster-dem',
