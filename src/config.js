@@ -526,7 +526,12 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.7
+                  ]
               }
             ],
             onChapterExit: []
