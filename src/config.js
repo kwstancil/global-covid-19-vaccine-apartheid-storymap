@@ -163,7 +163,7 @@ var config = {
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
                     1.0,
-                    0.7
+                    0.85
                   ]
               },
               {
@@ -184,7 +184,7 @@ var config = {
             hidden: false,
             title: 'A) TRIPS waiver: Big Pharma claims that lifting patents won’t help augment supply—even after experts identify more than 100 potential manufacturers in the Global South',
             image: '',
-            description: 'In a thinly veiled attempt to defend Big Pharma’s extremely profitable IP monopolies, industry lobbyists and their allies baselessly claimed that the TRIPS waiver wouldn’t lead to an increase the worldwide supply of vaccines because generic producers in developing countries lack the capacity to replicate the mRNA manufacturing process. This racist talking point persisted even after experts identified 120 firms in Africa, Asia, and Latin America capable of making jabs if only Pfizer-BioNTech and Moderna would share vaccine recipes and tech—none of which would exist in the first place without years of taxpayer-funded research.<P>Hover over the purple circles to see how many factories are lying idle as a result of corporate profiteering.<p>INSERT INTERACTIVITY HERE',
+            description: 'In a thinly veiled attempt to defend Big Pharma’s extremely profitable IP monopolies, industry lobbyists and their allies baselessly claimed that the TRIPS waiver wouldn’t lead to an increase the worldwide supply of vaccines because generic producers in developing countries lack the capacity to replicate the mRNA manufacturing process. This racist talking point persisted even after experts identified 120 firms in Africa, Asia, and Latin America capable of making jabs if only Pfizer-BioNTech and Moderna would share vaccine recipes and tech—none of which would exist in the first place without years of taxpayer-funded research.<P>Hover over the purple circles to see how many factories are lying idle as a result of corporate profiteering.',
             location: {
                 center: [10.55606, 35.19720],
                 zoom: 1.5,
@@ -201,7 +201,12 @@ var config = {
               },
               {
                   layer: 'idle_production_capacity',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.75
+                  ]
               }
             ],
             onChapterExit: [
@@ -321,7 +326,7 @@ var config = {
             hidden: false,
             title: 'C) mRNA Vaccine Technology Transfer Hub in South Africa: Afrigen hub identifies 15 "spokes"; WHO and South Korea vow to build global teaching facility',
             image: '',
-            description: 'As of April 2022, 14 manufacturers in LMICs have been named as “spokes,” or recipients of mRNA technology and training from the Afrigen hub. In addition, the WHO has teamed up with South Korea to create a global biomanufacturing teaching facility that will showcase best practices and complement specific trainings developed by researchers involved in the South African project.<p>Hover over the orange countries to see the names of participating manufacturers.<p>INSERT INTERACTIVITY HERE',
+            description: 'As of April 2022, 14 manufacturers in LMICs have been named as “spokes,” or recipients of mRNA technology and training from the Afrigen hub. In addition, the WHO has teamed up with South Korea to create a global biomanufacturing teaching facility that will showcase best practices and complement specific trainings developed by researchers involved in the South African project.<p>Hover over the orange countries to see the names of participating manufacturers.',
             location: {
                 center: [94.59787, 31.01989],
                 zoom: 2.1,
@@ -338,11 +343,21 @@ var config = {
               },
               {
                   layer: 'who_spokes',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.75
+                  ]
               },
               {
                   layer: 'who_instruction',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.75
+                  ]
               }
             ],
             onChapterExit: []
@@ -370,11 +385,21 @@ var config = {
               },
               {
                   layer: 'who_spokes',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.75
+                  ]
               },
               {
                   layer: 'who_instruction',
-                  opacity: 1
+                  opacity: [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.75
+                  ]
               }
             ],
             onChapterExit: []
@@ -530,7 +555,7 @@ var config = {
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
                     1.0,
-                    0.7
+                    0.85
                   ]
               }
             ],
