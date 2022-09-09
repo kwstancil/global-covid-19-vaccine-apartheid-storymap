@@ -313,6 +313,15 @@ var map = new mapboxgl.Map({
     projection: config.projection
 });
 
+// create a popup without adding to map
+let popup = new mapboxgl.Popup({
+  closeButton: false,
+  closeOnClick: false
+});
+
+// define initial hover state
+let hoveredStateId = null;
+
 // Create a inset map if enabled in config.js
 if (config.inset) {
  var insetMap = new mapboxgl.Map({
@@ -502,15 +511,6 @@ function updateInsetLayer(bounds) {
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
-
-// create a popup without adding to map
-let popup = new mapboxgl.Popup({
-  closeButton: false,
-  closeOnClick: false
-});
-
-// define initial hover state
-let hoveredStateId = null;
 
 // fire a function on a mousemove and feed it the geojson we gave an id of 'vaccination_rates'
 map.on('mousemove','vaccination_rates', (e) => {
