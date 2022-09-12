@@ -69,6 +69,10 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -92,6 +96,10 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
                   opacity: 0
               }
             ],
@@ -117,6 +125,10 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -140,6 +152,10 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
                   opacity: 0
               }
             ],
