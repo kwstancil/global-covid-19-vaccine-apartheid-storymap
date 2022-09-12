@@ -44,7 +44,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="vax_index.html" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
+            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="vax_index.html" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe><p><iframe src="https://ourworldindata.org/grapher/share-people-fully-vaccinated-covid?tab=map&time=latest" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>',
             location: {
                 center: [10.55606, 35.19720],
                 zoom: 1.25,
