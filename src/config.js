@@ -1,5 +1,6 @@
 var config = {
-    style: 'mapbox://styles/kwstancil/cl741bb3i000r14nvyq5cp0g0',
+    style: 'mapbox://styles/mapbox/light-v10',
+    //'mapbox://styles/kwstancil/cl741bb3i000r14nvyq5cp0g0',
     accessToken: 'pk.eyJ1Ijoia3dzdGFuY2lsIiwiYSI6ImNsNnlmZ3U3dTA1cnIza255MHQyMmo5MXQifQ.ZZIWcR1AHum3EElxlyI2cQ',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -33,6 +34,10 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
                   opacity: 0
               }
             ],
