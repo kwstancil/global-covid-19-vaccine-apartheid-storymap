@@ -3,19 +3,18 @@
 
 <head>
   <meta charset='utf-8' />
-  <title>Global COVID-19 Vaccinations</title>
+  <title>Global Covid-19 Vaccinations</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- mapbox-gl.css here -->
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
-  <!-- Rubik font -->
-  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
 
   <style>
     /* basic css to style the viewer goes here */
     body {
       margin: 0;
       padding: 0;
+      font-family: sans-serif;
     }
 
     #map {
@@ -144,6 +143,7 @@
         [-180, -90],
         [180, 90]
       ], // the coordinate boundaries of the world
+      projection: 'equirectangular',
       zoom: 1,
       minZoom: 1,
       maxZoom: 1,
@@ -155,7 +155,7 @@
       // AJAX request for GeoJSON data
       $.getJSON("../data/countries.geojson", function(countries) {
         // use Papa.parse to read csv data directly from the web source
-        Papa.parse('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv', {
+        Papa.parse('https://github.com/owid/covid-19-data/blob/master/public/data/latest/owid-covid-latest.csv', {
           download: true,
           header: true,
           complete: function(csvData) {
