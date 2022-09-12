@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='utf-8' />
-  <title>Global Covid-19 Vaccinations</title>
+  <title>Covid-19 Vaccination Rates</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <!-- mapbox-gl.css here -->
@@ -47,7 +47,7 @@
     /* set font styles for the title */
     h1 {
       font-size: 20px;
-      font-family: 'Rubik', sans-serif;
+      font-family: sans-serif;
       padding-bottom: 0px;
       padding-top: 0px;
       font-weight: normal;
@@ -57,7 +57,7 @@
     h2 {
       cursor: pointer;
       font-size: 14px;
-      font-family: 'Rubik', sans-serif;
+      font-family: sans-serif;
       padding-bottom: 0px;
       padding-top: 0px;
       font-weight: normal;
@@ -83,7 +83,7 @@
   <!-- title and time slider -->
   <div class='session' id='sliderbar'>
     <!-- the shown title of the map -->
-    <h1>Fully Vaccinated for COVID-19<br>Per 100 People</h1>
+    <h1>Share of Population Fully Vaccinated<br>in Each Country Over Time</h1>
     <div class='container'>
       <!-- the selected date -->
       <h2>Date: <label id='active-date'></label></h2>
@@ -94,7 +94,7 @@
   </div>
 
   <!-- mapbox-gl.js library -->
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- PapaParse -->
@@ -144,9 +144,9 @@
         [180, 90]
       ], // the coordinate boundaries of the world
       projection: 'equirectangular',
-      zoom: 1,
-      minZoom: 1,
-      maxZoom: 1,
+      zoom: 1.25,
+      minZoom: 1.25,
+      maxZoom: 1.25,
       style: 'mapbox://styles/mapbox/light-v10' // add the style here
     });
 
@@ -155,7 +155,7 @@
       // AJAX request for GeoJSON data
       $.getJSON("../data/countries.geojson", function(countries) {
         // use Papa.parse to read csv data directly from the web source
-        Papa.parse('https://github.com/owid/covid-19-data/blob/master/public/data/latest/owid-covid-latest.csv', {
+        Papa.parse('https://github.com/owid/covid-19-data/blob/master/public/data/vaccinations/vaccinations.csv', {
           download: true,
           header: true,
           complete: function(csvData) {

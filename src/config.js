@@ -42,7 +42,7 @@ var config = {
             id: 'vaxrates',
             alignment: 'full',
             hidden: false,
-            title: 'Share of Population Fully Vaccinated in Each Country Over Time',
+            title: '',
             image: '',
             description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="vax_index.html" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
             location: {
