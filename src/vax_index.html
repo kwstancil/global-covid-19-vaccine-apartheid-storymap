@@ -191,7 +191,7 @@
         'source': 'geojson', // refers to source above
         'layout': {},
         'paint': {
-          'fill-color': ['step', ['get', 'people_fully_vaccinated_per_hundred'], '#ffffff', 0, '#f7fbff', 14, '#c8ddf0', 36, '#73b3d8', 57, '#2879b9', 76, '#08306b'],
+          'fill-color': ['step', ['get', 'people_fully_vaccinated_per_hundred'], '#eff3ff', 0, '#eff3ff', 14, '#bdd7e7', 36, '#6baed6', 57, '#3182bd', 76, '#08519c'],
           'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], !1], 1.0, ['case', ["==", ["get", "people_fully_vaccinated_per_hundred"], null], 0.0, 0.7]],
         }
       });

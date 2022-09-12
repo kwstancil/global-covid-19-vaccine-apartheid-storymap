@@ -327,121 +327,60 @@ map.on("load", function() {
         'paint': {
           'fill-color': ['step', ['get', 'vaccinations_people_fully_vaccinated_per_hundred'],
               '#ffffff',
-              0, '#f7fbff',
-              14, '#c8ddf0',
-              36, '#73b3d8',
-              57, '#2879b9',
-              76, '#08306b']
+              0, '#eff3ff',
+              14, '#bdd7e7',
+              36, '#6baed6',
+              57, '#3182bd',
+              76, '#08519c']
         }
   });
   // Add the second new layer
-    map.addLayer({
-      'id': 'support_trips_waiver',
-      'type': 'circle',
-      'source': {
-          'type': 'geojson',
-          'data': '../data/support_trips_waiver.geojson'
-      },
-      'opacity': 0,
-      'paint': {
-        'circle-color': [
-          'match',
-          ['get', 'TRIPS_WAIVER'],
-          0,
-          'red',
-          1,
-          'green',
-          2,
-          'yellow',
-          3,
-          'orange',
-          /* other */ '#ccc'
-        ],
-        'circle-stroke-color': '#4d4d4d',
-        'circle-stroke-width': 0.5
-      }
-    });
-    // Add the second new layer
-  map.addLayer({
-    'id': 'support_trips_waiver',
-    'type': 'circle',
-    'source': {
-        'type': 'geojson',
-        'data': '../data/support_trips_waiver.geojson'
-    },
-    'opacity': 0,
-    'paint': {
-      'circle-color': [
-        'match',
-        ['get', 'TRIPS_WAIVER'],
-        0,
-        'red',
-        1,
-        'green',
-        2,
-        'yellow',
-        3,
-        'orange',
-        /* other */ '#ccc'
-      ],
-      'circle-stroke-color': '#4d4d4d',
-      'circle-stroke-width': 0.5
-    }
-  });
-  // Add the second new layer
-  map.addLayer({
-    'id': 'support_trips_waiver',
-    'type': 'circle',
-    'source': {
-        'type': 'geojson',
-        'data': '../data/support_trips_waiver.geojson'
-    },
-    'opacity': 0,
-    'paint': {
-      'circle-color': [
-        'match',
-        ['get', 'TRIPS_WAIVER'],
-        0,
-        'red',
-        1,
-        'green',
-        2,
-        'yellow',
-        3,
-        'orange',
-        /* other */ '#ccc'
-      ],
-      'circle-stroke-color': '#4d4d4d',
-      'circle-stroke-width': 0.5
-    }
-  });
-  // Add the second new layer
-  map.addLayer({
-    'id': 'support_trips_waiver',
-    'type': 'circle',
-    'source': {
-        'type': 'geojson',
-        'data': '../data/support_trips_waiver.geojson'
-    },
-    'opacity': 0,
-    'paint': {
-      'circle-color': [
-        'match',
-        ['get', 'TRIPS_WAIVER'],
-        0,
-        'red',
-        1,
-        'green',
-        2,
-        'yellow',
-        3,
-        'orange',
-        /* other */ '#ccc'
-      ],
-      'circle-stroke-color': '#4d4d4d',
-      'circle-stroke-width': 0.5
-    }
-  });
+    // map.addLayer({
+    //   'id': 'support_trips_waiver',
+    //       'type': 'circle',
+    //       'source': {
+    //           'type': 'geojson',
+    //           'data': '../data/support_trips_waiver.geojson'
+    //       },
+    //       'opacity': 0,
+    //       'paint': {
+    //         'circle-color': [
+    //           'match',
+    //             ['get', 'TRIPS_WAIVER'],
+    //             0, '#ff0f0f',
+    //             1, '#00cc1b',
+    //             2, '#f7ff0a',
+    //             3, 'hsla(0, 0%, 0%, 0)',
+    //             '#ccc'
+    //           ],
+    //           'circle-stroke-color': '#4d4d4d',
+    //           'circle-stroke-width': 0
+    //         }
+    // });
+    // // Add the third new layer
+    // map.addLayer({
+    //   'id': 'idle_production_capacity',
+    //       'type': 'circle',
+    //       'source': {
+    //           'type': 'geojson',
+    //           'data': '../data/idle_production_capacity.geojson'
+    //       },
+    //       'opacity': 0,
+    //       'paint': {
+    //         'circle-color': '#b752ff',
+    //         'circle-radius': [
+    //           'step',
+    //           ['get', 'FACTORIES'],
+    //             1, '4px',
+    //             2, '6px',
+    //             3, '8px',
+    //             9, '15px',
+    //             34, '50px',
+    //             55, '80px',
+    //             '#ccc'
+    //           ]
+    //         }
+    // });
 
     if (config.use3dTerrain) {
         map.addSource('mapbox-dem', {
