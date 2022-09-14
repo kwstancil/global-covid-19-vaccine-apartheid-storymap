@@ -40,6 +40,18 @@ var config = {
                   layer: 'support_trips_waiver',
                   opacity: 0
               }
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
             ],
             onChapterExit: []
         },
@@ -74,6 +86,18 @@ var config = {
                   layer: 'support_trips_waiver',
                   opacity: 0
               }
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
             ],
             onChapterExit: []
         },
@@ -100,6 +124,18 @@ var config = {
               },
               {
                   layer: 'support_trips_waiver',
+                  opacity: 0
+              }
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_instruction',
                   opacity: 0
               }
             ],
@@ -130,6 +166,18 @@ var config = {
                   layer: 'support_trips_waiver',
                   opacity: 0
               }
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
             ],
             onChapterExit: []
         },
@@ -158,6 +206,18 @@ var config = {
                   layer: 'support_trips_waiver',
                   opacity: 0
               }
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
             ],
             onChapterExit: []
         },
@@ -180,16 +240,23 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: [
-                    'case',
-                    ['boolean', ['feature-state', 'hover'], false],
-                    1.0,
-                    0.85
-                  ]
+                  opacity: 0
               },
               {
                   layer: 'support_trips_waiver',
                   opacity: 1
+              }
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              }
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: [
