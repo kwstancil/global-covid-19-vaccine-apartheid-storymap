@@ -13,7 +13,7 @@ var config = {
     title: 'Global Covid-19 Vaccine Apartheid',
     subtitle: 'Why have less than 25% of people in impoverished nations received at least one dose? And what’s being done to change that?',
     byline: 'By Kenny Stancil',
-    footer: 'Sources: <a href="https://github.com/owid/covid-19-data/tree/master/public/data" target="_blank">Vaccination rates</a> come courtesy of Our World in Data - see Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021); Information about whether governments <a href="https://msfaccess.org/no-patents-no-monopolies-pandemic" target="_blank">support or oppose the TRIPS waiver proposal</a> supplied by Doctors Without Borders; Data on <a href="https://www.hrw.org/news/2021/12/15/experts-identify-100-plus-firms-make-covid-19-mrna-vaccines" target="_blank">untapped vaccine production potential</a> compiled by Human Rights Watch and the AccessIBSA project. <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/" target="_blank">National boundaries</a> and <a href="https://gavinr.com/open-data/world-countries-centroids/" target="_blank">country centroids</a> provided by Natural Earth and Gavin Rehkemper, respectively.<p>Photos (in descending order): NEED TO ADD<p>Thank you to Ryan Cooper and Boyd Shearer, for helping me with the earliest iterations of this map, and to Jay Bowen and Rich Donohue, for helping me to improve it more recently.<p>See my <a href="https://kwstancil.github.io/map-portfolio/" target="_blank">portfolio</a>.<p>Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Sources: <a href="https://github.com/owid/covid-19-data/tree/master/public/data" target="_blank">Vaccination rates</a> come courtesy of Our World in Data - see Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021); Information about whether governments <a href="https://msfaccess.org/no-patents-no-monopolies-pandemic" target="_blank">support or oppose the TRIPS waiver proposal</a> supplied by Doctors Without Borders; Data on <a href="https://www.hrw.org/news/2021/12/15/experts-identify-100-plus-firms-make-covid-19-mrna-vaccines" target="_blank">untapped vaccine production potential</a> compiled by Human Rights Watch and the AccessIBSA project. <a href="https://medicinespatentpool.org/news-publications-post/who-and-mpp-announce-names-of-15-manufactures-to-receive-training-from-mrna-technology-transfer-hub" target="_blank">Participants in the WHO-led mRNA vaccine technology transfer hub</a> listed by the Medicines Patent Pool. <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/" target="_blank">National boundaries</a> and <a href="https://gavinr.com/open-data/world-countries-centroids/" target="_blank">country centroids</a> provided by Natural Earth and Gavin Rehkemper, respectively.<p>Photos (in descending order): NEED TO ADD<p>Thank you to Ryan Cooper and Boyd Shearer, for helping me with the earliest iterations of this map, and to Jay Bowen and Rich Donohue, for helping me to improve it more recently.<p>See my <a href="https://kwstancil.github.io/map-portfolio/" target="_blank">portfolio</a>.<p>Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: 'introduction',
@@ -39,15 +39,15 @@ var config = {
               {
                   layer: 'support_trips_waiver',
                   opacity: 0
-              }
+              },
               {
                   layer: 'idle_production_capacity',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_spokes',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_instruction',
                   opacity: 0
@@ -61,7 +61,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="vax_index.html" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe><p>NEED TO ADDRESS NULL VALUES TO ACHIEVE THE FOLLOWING:<iframe src="https://ourworldindata.org/grapher/share-people-fully-vaccinated-covid?tab=map&time=latest" loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>',
+            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="vax_index.html" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
             location: {
                 center: [10.55606, 35.19720],
                 zoom: 1.25,
@@ -85,15 +85,15 @@ var config = {
               {
                   layer: 'support_trips_waiver',
                   opacity: 0
-              }
+              },
               {
                   layer: 'idle_production_capacity',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_spokes',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_instruction',
                   opacity: 0
@@ -125,15 +125,15 @@ var config = {
               {
                   layer: 'support_trips_waiver',
                   opacity: 0
-              }
+              },
               {
                   layer: 'idle_production_capacity',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_spokes',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_instruction',
                   opacity: 0
@@ -165,15 +165,15 @@ var config = {
               {
                   layer: 'support_trips_waiver',
                   opacity: 0
-              }
+              },
               {
                   layer: 'idle_production_capacity',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_spokes',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_instruction',
                   opacity: 0
@@ -205,15 +205,15 @@ var config = {
               {
                   layer: 'support_trips_waiver',
                   opacity: 0
-              }
+              },
               {
                   layer: 'idle_production_capacity',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_spokes',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_instruction',
                   opacity: 0
@@ -227,7 +227,7 @@ var config = {
             hidden: false,
             title: 'A) TRIPS waiver: Despite widespread support, the proposal meets stiff resistance',
             image: '',
-            description: 'More than 100 nations, including the vast majority of the Global South, endorsed the proposal to temporarily waive the WTO’s corporate-friendly Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement. Trreating medical tools designed to defeat Covid-19 as global public goods was also the preference of a majority of voters in high-income countries, according to polls.<p>However, a handful of Big Pharma-aligned policymakers—most of them from highly vaccinated parts of Europe—spent nearly 21 months stonewalling the popular measure, which needed unanimous support from the WTO’s 164 members to pass.<p>INSERT KEY HERE<P>During that time, the global death toll <a href="https://ourworldindata.org/excess-mortality-covid#estimated-excess-mortality-from-the-world-health-organization" target="_blank">soared</a> by more than 12 million. Excess mortality—an estimate of the difference in the number of deaths that occur amid a crisis compared with what would have been expected under “normal” conditions—during the coronavirus pandemic has been <a href="https://www.oxfam.org.uk/media/press-releases/covid-death-toll-four-times-higher-in-poorer-countries-than-rich-countries/" target="_blank">four times higher</a> in poorer countries than rich ones.<p>“Millions have died while the governments of rich countries have been bickering over monopoly rights for Covid-19 vaccines,” Nick Dearden, the director of Global Justice Now, said in July 2021. “Every one of those deaths is a mark of shame for the governments of countries like the U.K. and Germany who have protected patents over human lives.”<p>GOAL IS TO MAKE CHOROPLETH BASE MAP REFLECT MOST RECENT DATA (CURRENTLY A SNAPSHOT FROM 8/15)',
+            description: 'More than 100 nations, including the vast majority of the Global South, endorsed the proposal to temporarily waive the WTO’s corporate-friendly Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement. Trreating medical tools designed to defeat Covid-19 as global public goods was also the preference of a majority of voters in high-income countries, according to polls.<p>However, a handful of Big Pharma-aligned policymakers—most of them from highly vaccinated parts of Europe—spent nearly 21 months stonewalling the popular measure, which needed unanimous support from the WTO’s 164 members to pass.<p>INSERT KEY HERE<P>During that time, the global death toll <a href="https://ourworldindata.org/excess-mortality-covid#estimated-excess-mortality-from-the-world-health-organization" target="_blank">soared</a> by more than 12 million. Excess mortality—an estimate of the difference in the number of deaths that occur amid a crisis compared with what would have been expected under “normal” conditions—during the coronavirus pandemic has been <a href="https://www.oxfam.org.uk/media/press-releases/covid-death-toll-four-times-higher-in-poorer-countries-than-rich-countries/" target="_blank">four times higher</a> in poorer countries than rich ones.<p>“Millions have died while the governments of rich countries have been bickering over monopoly rights for Covid-19 vaccines,” Nick Dearden, the director of Global Justice Now, said in July 2021. “Every one of those deaths is a mark of shame for the governments of countries like the U.K. and Germany who have protected patents over human lives.”<p>',
             location: {
                 center: [10.55606, 35.19720],
                 zoom: 1.5,
@@ -245,15 +245,15 @@ var config = {
               {
                   layer: 'support_trips_waiver',
                   opacity: 1
-              }
+              },
               {
                   layer: 'idle_production_capacity',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_spokes',
                   opacity: 0
-              }
+              },
               {
                   layer: 'who_instruction',
                   opacity: 0
@@ -288,6 +288,10 @@ var config = {
                   opacity: 0
               },
               {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
                   layer: 'idle_production_capacity',
                   opacity: [
                     'case',
@@ -295,6 +299,14 @@ var config = {
                     1.0,
                     0.75
                   ]
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: [
@@ -324,6 +336,22 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -347,6 +375,22 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
                   opacity: 0
               }
             ],
@@ -372,6 +416,22 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -395,6 +455,14 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
                   opacity: 0
               },
               {
@@ -430,6 +498,14 @@ var config = {
                   opacity: 0
               },
               {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
                   layer: 'who_spokes',
                   opacity: [
                     'case',
@@ -448,7 +524,16 @@ var config = {
                   ]
               }
             ],
-            onChapterExit: []
+            onChapterExit: [
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
+            ]
         },
         {
             id: 'technih',
@@ -472,6 +557,14 @@ var config = {
                   opacity: 0
               },
               {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
                   layer: 'who_spokes',
                   opacity: [
                     'case',
@@ -490,7 +583,16 @@ var config = {
                   ]
               }
             ],
-            onChapterExit: []
+            onChapterExit: [
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
+            ]
         },
         {
             id: 'biden1',
@@ -511,6 +613,14 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
                   opacity: 0
               },
               {
@@ -544,6 +654,22 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -567,6 +693,22 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
                   opacity: 0
               }
             ],
@@ -592,6 +734,22 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -616,6 +774,22 @@ var config = {
               {
                   layer: 'vaccination_rates',
                   opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
@@ -626,7 +800,7 @@ var config = {
             hidden: false,
             title: 'Conclusion: Policies designed to maximize profits at the expense of the many have killed millions.',
             image: '',
-            description: 'Existing IP rules and proposals for more democratic frameworks are matters of life-and-death. Nobody is safe until everybody is safe!<p>Charity is not a substitute for justice. Low-income nations don’t want, and shouldn’t be forced, to wait for rich countries’ leftovers. They want, and ought to have, access to the publicly financed knowledge and technology needed to produce doses and boost the global supply of life-saving medicines.<p>International solidarity is <a href="https://link.springer.com/article/10.1007/s10393-022-01609-4" target="_blank">indispensable</a> to defeating Covid-19 vaccine apartheid, which shows few signs of abating as rich countries have already started <a href="https://peoplesvaccine.org/resources/media-releases/moderna-omicron-vaccine/" target="_blank">hoarding</a> the Omicron-specific boosters over which Moderna claims exclusive control.<p>The same underlying dynamics have given rise to other manifestations of global health inequality and threaten to reproduce uneven access to promising Covid-19 <a href="https://www.commondreams.org/news/2022/04/22/who-warns-poor-nations-could-be-pushed-end-queue-pfizer-covid-pill" target="_blank">treatments</a> such as Pfizer’s Paxlovid, and key resources in general, including the <a href="https://inthesetimes.com/article/failure-wto-trips-waiver-covid-vaccines-tests-treatments-pharmaceutical-industry" target="_blank">clean energy</a> technologies that must be deployed as rapidly and broadly as possible to stave off the most catastrophic effects of the fossil fuel-driven climate crisis.<p>“Never again should a pharmaceutical corporation receive huge sums of funding without some protection built in for the public interest,” Rizvi argues. “Governments can require that corporations, as a condition of accepting funding, set reasonable prices, provide doses to lower and middle-income countries, share technology with international institutions like the World Health Organization.”<p>“These were all possibilities, but very few of them were actually realized because governments did not make those choices,” he adds. “And so that, I hope, is one of the lessons we draw from this pandemic. It’s about how we let billions of dollars in public funding translate into tens of billions of dollars of private profits.”<P>GOAL IS TO MAKE CHOROPLETH BASE MAP REFLECT MOST RECENT DATA (CURRENTLY A SNAPSHOT FROM 8/15)',
+            description: 'Existing IP rules and proposals for more democratic frameworks are matters of life-and-death. Nobody is safe until everybody is safe!<p>Charity is not a substitute for justice. Low-income nations don’t want, and shouldn’t be forced, to wait for rich countries’ leftovers. They want, and ought to have, access to the publicly financed knowledge and technology needed to produce doses and boost the global supply of life-saving medicines.<p>International solidarity is <a href="https://link.springer.com/article/10.1007/s10393-022-01609-4" target="_blank">indispensable</a> to defeating Covid-19 vaccine apartheid, which shows few signs of abating as rich countries have already started <a href="https://peoplesvaccine.org/resources/media-releases/moderna-omicron-vaccine/" target="_blank">hoarding</a> the Omicron-specific boosters over which Moderna claims exclusive control.<p>The same underlying dynamics have given rise to other manifestations of global health inequality and threaten to reproduce uneven access to promising Covid-19 <a href="https://www.commondreams.org/news/2022/04/22/who-warns-poor-nations-could-be-pushed-end-queue-pfizer-covid-pill" target="_blank">treatments</a> such as Pfizer’s Paxlovid, and key resources in general, including the <a href="https://inthesetimes.com/article/failure-wto-trips-waiver-covid-vaccines-tests-treatments-pharmaceutical-industry" target="_blank">clean energy</a> technologies that must be deployed as rapidly and broadly as possible to stave off the most catastrophic effects of the fossil fuel-driven climate crisis.<p>“Never again should a pharmaceutical corporation receive huge sums of funding without some protection built in for the public interest,” Rizvi argues. “Governments can require that corporations, as a condition of accepting funding, set reasonable prices, provide doses to lower and middle-income countries, share technology with international institutions like the World Health Organization.”<p>“These were all possibilities, but very few of them were actually realized because governments did not make those choices,” he adds. “And so that, I hope, is one of the lessons we draw from this pandemic. It’s about how we let billions of dollars in public funding translate into tens of billions of dollars of private profits.”<P>',
             location: {
                 center: [10.55606, 35.19720],
                 zoom: 1.25,
@@ -639,12 +813,23 @@ var config = {
             onChapterEnter: [
               {
                   layer: 'vaccination_rates',
-                  opacity: [
-                    'case',
-                    ['boolean', ['feature-state', 'hover'], false],
-                    1.0,
-                    0.85
-                  ]
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
               }
             ],
             onChapterExit: []
