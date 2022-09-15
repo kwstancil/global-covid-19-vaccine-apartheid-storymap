@@ -367,23 +367,13 @@ map.on("load", function() {
           },
           'opacity': 0,
           'paint': {
-            'circle-color': '#b752ff',
-            'circle-stroke-width': 0.5,
-            'circle-stroke-color': '#4d4d4d',
-            'circle-opacity': 0.75,
-            "circle-radius": {
-              property: 'FACTORIES',
-              stops: [
-                [2, 5],
-                [1000, 10],
-                [8000, 20],
-              ]
-            }
-          }
+               'circle-radius': ['number', ['get', 'FACTORIES'], 1, '10px', 2, '20px', 3, '30px', 9, '45px', 34, '70px', 55, '90px'],
+               'circle-color': '#b752ff',
+               'circle-opacity': 0.8,
+               'circle-stroke-width': 0.5,
+               'circle-stroke-color': '#4d4d4d'
+             }
       });
-            // 'match',
-            // ['get', 'FACTORIES'], '4px', 1, '6px', 2, '8px', 3, '15px', 9, '50px', 34, '80px', 55, '#ccc'],
-
       // Add the fourth new layer
       map.addLayer({
         'id': 'who_spokes',
