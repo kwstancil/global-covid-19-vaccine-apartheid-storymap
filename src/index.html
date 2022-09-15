@@ -288,6 +288,8 @@ let popup = new mapboxgl.Popup({
 
 // define initial hover state
 let hoveredStateId = null;
+let factoryId = null;
+let nameId = null;
 
 // Create a inset map if enabled in config.js
 if (config.inset) {
@@ -626,15 +628,15 @@ map.on('mousemove','idle_production_capacity', (e) => {
 
   // reset the hover state id on mouse move so the layer knows when to change opacity
   if (e.features.length > 0) {
-    if (hoveredStateId !== null) {
+    if (factoryId !== null) {
       map.setFeatureState(
-        { source: 'composite', sourceLayer: 'idle_production_capacity', id: hoveredStateId },
+        { source: 'composite', sourceLayer: 'idle_production_capacity', id: factoryId },
         { hover: false }
       );
     }
-    hoveredStateId = e.features[0].id;
+    factoryId = e.features[0].id;
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'idle_production_capacity', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'idle_production_capacity', id: factoryId },
       { hover: true }
     );
   }
@@ -658,13 +660,13 @@ map.on('mouseleave', 'idle_production_capacity', () => {
   map.getCanvas().style.cursor = '';
 
   // reset the hover state id
-  if (hoveredStateId !== null) {
+  if (factoryId !== null) {
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'idle_production_capacity', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'idle_production_capacity', id: factoryId },
       { hover: false }
     );
   }
-  hoveredStateId = null;
+  factoryId = null;
 
   // and remove the popup
   popup.remove();
@@ -679,15 +681,15 @@ map.on('mousemove','who_spokes', (e) => {
 
   // reset the hover state id on mouse move so the layer knows when to change opacity
   if (e.features.length > 0) {
-    if (hoveredStateId !== null) {
+    if (nameId !== null) {
       map.setFeatureState(
-        { source: 'composite', sourceLayer: 'who_spokes', id: hoveredStateId },
+        { source: 'composite', sourceLayer: 'who_spokes', id: nameId },
         { hover: false }
       );
     }
-    hoveredStateId = e.features[0].id;
+    nameId = e.features[0].id;
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'who_spokes', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'who_spokes', id: nameId },
       { hover: true }
     );
   }
@@ -711,13 +713,13 @@ map.on('mouseleave', 'who_spokes', () => {
   map.getCanvas().style.cursor = '';
 
   // reset the hover state id
-  if (hoveredStateId !== null) {
+  if (nameId !== null) {
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'who_spokes', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'who_spokes', id: nameId },
       { hover: false }
     );
   }
-  hoveredStateId = null;
+  nameId = null;
 
   // and remove the popup
   popup.remove();
