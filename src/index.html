@@ -334,28 +334,28 @@ map.on("load", function() {
               76, '#08519c']
         }
   });
-    //Add the second new layer
-    map.addLayer({
-      'id': 'support_trips_waiver',
-          'type': 'circle',
-          'source': {
-              'type': 'geojson',
-              'data': '../data/support_trips_waiver.geojson'
-          },
-          'opacity': 0,
-          'paint': {
-            'circle-color': [
-              'match',
-                ['get', 'TRIPS_WAIVER'],
-                0, '#ff0f0f',
-                1, '#00cc1b',
-                2, '#f7ff0a',
-                3, 'hsla(0, 0%, 0%, 0)',
-                '#ccc'
-              ],
-              'circle-stroke-color': '#4d4d4d',
-              'circle-stroke-width': 0
-            }
+  //Add the second new layer
+  map.addLayer({
+    'id': 'support_trips_waiver',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': '../data/support_trips_waiver.geojson'
+        },
+        'opacity': 0,
+        'paint': {
+          'circle-color': [
+            'match',
+              ['get', 'TRIPS_WAIVER'],
+              0, '#ff0f0f',
+              1, '#00cc1b',
+              2, '#f7ff0a',
+              3, 'hsla(0, 0%, 0%, 0)',
+              '#ccc'
+          ],
+            'circle-stroke-color': '#4d4d4d',
+            'circle-stroke-width': 0
+        }
     });
     // Add the third new layer
     map.addLayer({
@@ -367,18 +367,50 @@ map.on("load", function() {
           },
           'opacity': 0,
           'paint': {
-            "circle-radius": [
-            'match',
-            ['get', 'FACTORIES'], '4px', 1, '6px', 2, '8px', 3, '15px', 9, '50px', 34, '80px', 55, '#ccc'],
             'circle-color': '#b752ff',
+            'circle-stroke-width': 0.5,
             'circle-stroke-color': '#4d4d4d',
-            'circle-stroke-width': 0.5
+            'circle-opacity': 0.75,
+            "circle-radius": {
+              property: 'FACTORIES',
+              stops: [
+                [2, 5],
+                [1000, 10],
+                [8000, 20],
+              ]
             }
-    });
+          }
+      });
+            // 'match',
+            // ['get', 'FACTORIES'], '4px', 1, '6px', 2, '8px', 3, '15px', 9, '50px', 34, '80px', 55, '#ccc'],
 
+      // Add the fourth new layer
+      map.addLayer({
+        'id': 'who_spokes',
+            'type': 'fill',
+            'source': {
+                'type': 'geojson',
+                'data': '../data/who_spokes.geojson'
+            },
+            'opacity': 0,
+            'paint': {
+              'fill-color': '#fe8616'
+            }
+      });
 
-
-
+      // Add the fifth new layer
+      map.addLayer({
+        'id': 'who_instruction',
+            'type': 'fill',
+            'source': {
+                'type': 'geojson',
+                'data': '../data/who_instruction.geojson'
+            },
+            'opacity': 0,
+            'paint': {
+              'fill-color': '#ff6bdc'
+            }
+      });
 
     if (config.use3dTerrain) {
         map.addSource('mapbox-dem', {

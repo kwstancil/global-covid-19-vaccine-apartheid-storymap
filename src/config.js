@@ -293,12 +293,13 @@ var config = {
               },
               {
                   layer: 'idle_production_capacity',
-                  opacity: [
-                    'case',
-                    ['boolean', ['feature-state', 'hover'], false],
-                    1.0,
-                    0.75
-                  ]
+                  opacity: 1
+                  //   [
+                  //   'case',
+                  //   ['boolean', ['feature-state', 'hover'], false],
+                  //   1.0,
+                  //   0.75
+                  // ]
               },
               {
                   layer: 'who_spokes',
