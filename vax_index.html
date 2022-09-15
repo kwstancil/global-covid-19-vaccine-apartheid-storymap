@@ -153,7 +153,7 @@
     // when the map loads, call a function
     map.on('load', () => {
       // AJAX request for GeoJSON data
-      $.getJSON("../data/countries.geojson", function(countries) {
+      $.getJSON("./data/countries.geojson", function(countries) {
         // use Papa.parse to read csv data directly from the web source
         Papa.parse('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/vaccinations.csv', {
           download: true,
