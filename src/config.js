@@ -516,12 +516,7 @@ var config = {
               },
               {
                   layer: 'who_instruction',
-                  opacity: [
-                    'case',
-                    ['boolean', ['feature-state', 'hover'], false],
-                    1.0,
-                    0.8
-                  ]
+                  opacity: 0.8
               }
             ],
             onChapterExit: []
@@ -561,17 +556,12 @@ var config = {
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
                     1.0,
-                    0.75
+                    0.8
                   ]
               },
               {
                   layer: 'who_instruction',
-                  opacity: [
-                    'case',
-                    ['boolean', ['feature-state', 'hover'], false],
-                    1.0,
-                    0.75
-                  ]
+                  opacity: 0.8
               }
             ],
             onChapterExit: [
