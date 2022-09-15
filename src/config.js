@@ -297,7 +297,7 @@ var config = {
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
                     1.0,
-                    0.75
+                    0.8
                   ]
               },
               {
@@ -511,7 +511,7 @@ var config = {
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
                     1.0,
-                    0.75
+                    0.8
                   ]
               },
               {
@@ -520,7 +520,7 @@ var config = {
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
                     1.0,
-                    0.75
+                    0.8
                   ]
               }
             ],
