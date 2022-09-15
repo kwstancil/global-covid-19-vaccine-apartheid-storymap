@@ -293,13 +293,12 @@ var config = {
               },
               {
                   layer: 'idle_production_capacity',
-                  opacity: 1
-                  //   [
-                  //   'case',
-                  //   ['boolean', ['feature-state', 'hover'], false],
-                  //   1.0,
-                  //   0.75
-                  // ]
+                  opacity:[
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    1.0,
+                    0.75
+                  ]
               },
               {
                   layer: 'who_spokes',
@@ -483,7 +482,7 @@ var config = {
             hidden: false,
             title: 'C) mRNA Vaccine Technology Transfer Hub in South Africa: Afrigen hub identifies 15 "spokes"; WHO and South Korea vow to build global teaching facility',
             image: '',
-            description: 'As of April 2022, 14 manufacturers in LMICs have been <a href="https://medicinespatentpool.org/news-publications-post/who-and-mpp-announce-names-of-15-manufactures-to-receive-training-from-mrna-technology-transfer-hub" target="_blank">named</a> as “spokes,” or recipients of mRNA technology and training from the Afrigen hub. In addition, the WHO has teamed up with South Korea to <a href="https://www.who.int/news/item/23-02-2022-moving-forward-on-goal-to-boost-local-pharmaceutical-production-who-establishes-global-biomanufacturing-training-hub-in-republic-of-korea" target="_blank">create</a> a global biomanufacturing teaching facility that will showcase best practices and complement specific trainings developed by researchers involved in the South African project.<p>Hover over the orange countries to see the names of participating manufacturers.',
+            description: 'As of April 2022, 15 manufacturers in LMICs have been <a href="https://medicinespatentpool.org/news-publications-post/who-and-mpp-announce-names-of-15-manufactures-to-receive-training-from-mrna-technology-transfer-hub" target="_blank">named</a> as “spokes,” or recipients of mRNA technology and training from the Afrigen hub. In addition, the WHO has teamed up with South Korea to <a href="https://www.who.int/news/item/23-02-2022-moving-forward-on-goal-to-boost-local-pharmaceutical-production-who-establishes-global-biomanufacturing-training-hub-in-republic-of-korea" target="_blank">create</a> a global biomanufacturing teaching facility that will showcase best practices and complement specific trainings developed by researchers involved in the South African project.<p>Hover over the orange countries to see the names of participating manufacturers.',
             location: {
                 center: [94.59787, 31.01989],
                 zoom: 2.1,
@@ -525,16 +524,7 @@ var config = {
                   ]
               }
             ],
-            onChapterExit: [
-              {
-                  layer: 'who_spokes',
-                  opacity: 0
-              },
-              {
-                  layer: 'who_instruction',
-                  opacity: 0
-              }
-            ]
+            onChapterExit: []
         },
         {
             id: 'technih',
