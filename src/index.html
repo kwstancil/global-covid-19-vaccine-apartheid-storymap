@@ -367,31 +367,18 @@ map.on("load", function() {
           },
           'opacity': 0,
           'paint': {
+            "circle-radius": [
+            'match',
+            ['get', 'FACTORIES'], '4px', 1, '6px', 2, '8px', 3, '15px', 9, '50px', 34, '80px', 55, '#ccc'],
             'circle-color': '#b752ff',
             'circle-stroke-color': '#4d4d4d',
-            'circle-stroke-width': 0.5,
-            "circle-radius":{
-              property: 'FACTORIES',
-              stops: [
-                [2, 5],
-							  [1000, 10],
-							  [8000, 20],
-              ]
-            }
-
-            // [
-            //   'step',
-            //   ['get', 'FACTORIES'],
-            //     1, '4px',
-            //     2, '6px',
-            //     3, '8px',
-            //     9, '15px',
-            //     34, '50px',
-            //     55, '80px',
-            //     '#ccc'
-            //   ]
+            'circle-stroke-width': 0.5
             }
     });
+
+
+
+
 
     if (config.use3dTerrain) {
         map.addSource('mapbox-dem', {
