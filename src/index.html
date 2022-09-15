@@ -566,57 +566,57 @@ function updateInsetLayer(bounds) {
 window.addEventListener('resize', scroller.resize);
 
 // fire a function on a mousemove and feed it the geojson we gave an id of 'vaccination_rates'
-map.on('mousemove','vaccination_rates', (e) => {
-
-  // change the cursor style as a UI indicator.
-  map.getCanvas().style.cursor = 'pointer';
-
-  // reset the hover state id on mouse move so the layer knows when to change opacity
-  if (e.features.length > 0) {
-    if (hoveredStateId !== null) {
-      map.setFeatureState(
-        { source: 'composite', sourceLayer: 'vaccination_rates-66mmxb', id: hoveredStateId },
-        { hover: false }
-      );
-    }
-    hoveredStateId = e.features[0].id;
-    map.setFeatureState(
-      { source: 'composite', sourceLayer: 'vaccination_rates-66mmxb', id: hoveredStateId },
-      { hover: true }
-    );
-  }
-
-  // define the layer properties
-  // with "e.features[0].properties," you have access to all of the properties from the initial geojson layer
-  let props = e.features[0].properties;
-
-  // get the popup defined above
-  popup
-    .setLngLat(e.lngLat) // the location of the cursor
-    .setHTML('<b>' + props.BRK_NAME + '</b><br>At least one vaccination: ' + props.vaccinations_people_vaccinated_per_hundred + '%<br>Fully vaccinated: ' + props.vaccinations_people_fully_vaccinated_per_hundred + '%') // feed the popup the prop info
-    //.addTo(map) // add the popup to the map
-
-});
-
-// when you mouse off the layer...
-map.on('mouseleave', 'vaccination_rates', () => {
-
-  // change the cursor style back to initial setting
-  map.getCanvas().style.cursor = '';
-
-  // reset the hover state id
-  if (hoveredStateId !== null) {
-    map.setFeatureState(
-      { source: 'composite', sourceLayer: 'vaccination_rates-66mmxb', id: hoveredStateId },
-      { hover: false }
-    );
-  }
-  hoveredStateId = null;
-
-  // and remove the popup
-  popup.remove();
-
-});
+// map.on('mousemove','vaccination_rates', (e) => {
+//
+//   // change the cursor style as a UI indicator.
+//   map.getCanvas().style.cursor = 'pointer';
+//
+//   // reset the hover state id on mouse move so the layer knows when to change opacity
+//   if (e.features.length > 0) {
+//     if (hoveredStateId !== null) {
+//       map.setFeatureState(
+//         { source: 'composite', sourceLayer: 'vaccination_rates-66mmxb', id: hoveredStateId },
+//         { hover: false }
+//       );
+//     }
+//     hoveredStateId = e.features[0].id;
+//     map.setFeatureState(
+//       { source: 'composite', sourceLayer: 'vaccination_rates-66mmxb', id: hoveredStateId },
+//       { hover: true }
+//     );
+//   }
+//
+//   // define the layer properties
+//   // with "e.features[0].properties," you have access to all of the properties from the initial geojson layer
+//   let props = e.features[0].properties;
+//
+//   // get the popup defined above
+//   popup
+//     .setLngLat(e.lngLat) // the location of the cursor
+//     .setHTML('<b>' + props.BRK_NAME + '</b><br>At least one vaccination: ' + props.vaccinations_people_vaccinated_per_hundred + '%<br>Fully vaccinated: ' + props.vaccinations_people_fully_vaccinated_per_hundred + '%') // feed the popup the prop info
+//     //.addTo(map) // add the popup to the map
+//
+// });
+//
+// // when you mouse off the layer...
+// map.on('mouseleave', 'vaccination_rates', () => {
+//
+//   // change the cursor style back to initial setting
+//   map.getCanvas().style.cursor = '';
+//
+//   // reset the hover state id
+//   if (hoveredStateId !== null) {
+//     map.setFeatureState(
+//       { source: 'composite', sourceLayer: 'vaccination_rates-66mmxb', id: hoveredStateId },
+//       { hover: false }
+//     );
+//   }
+//   hoveredStateId = null;
+//
+//   // and remove the popup
+//   popup.remove();
+//
+// });
 
 // fire a function on a mousemove and feed it the geojson we gave an id of 'idle_production_capacity'
 map.on('mousemove','idle_production_capacity', (e) => {
@@ -628,13 +628,13 @@ map.on('mousemove','idle_production_capacity', (e) => {
   if (e.features.length > 0) {
     if (hoveredStateId !== null) {
       map.setFeatureState(
-        { source: 'composite', sourceLayer: 'idle_production_capacity-66mmxb', id: hoveredStateId },
+        { source: 'composite', sourceLayer: 'idle_production_capacity', id: hoveredStateId },
         { hover: false }
       );
     }
     hoveredStateId = e.features[0].id;
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'idle_production_capacity-66mmxb', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'idle_production_capacity', id: hoveredStateId },
       { hover: true }
     );
   }
@@ -660,7 +660,7 @@ map.on('mouseleave', 'idle_production_capacity', () => {
   // reset the hover state id
   if (hoveredStateId !== null) {
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'idle_production_capacity-66mmxb', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'idle_production_capacity', id: hoveredStateId },
       { hover: false }
     );
   }
@@ -681,13 +681,13 @@ map.on('mousemove','who_spokes', (e) => {
   if (e.features.length > 0) {
     if (hoveredStateId !== null) {
       map.setFeatureState(
-        { source: 'composite', sourceLayer: 'who_spokes-66mmxb', id: hoveredStateId },
+        { source: 'composite', sourceLayer: 'who_spokes', id: hoveredStateId },
         { hover: false }
       );
     }
     hoveredStateId = e.features[0].id;
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'who_spokes-66mmxb', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'who_spokes', id: hoveredStateId },
       { hover: true }
     );
   }
@@ -713,7 +713,7 @@ map.on('mouseleave', 'who_spokes', () => {
   // reset the hover state id
   if (hoveredStateId !== null) {
     map.setFeatureState(
-      { source: 'composite', sourceLayer: 'who_spokes-66mmxb', id: hoveredStateId },
+      { source: 'composite', sourceLayer: 'who_spokes', id: hoveredStateId },
       { hover: false }
     );
   }
