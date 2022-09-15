@@ -356,51 +356,51 @@ map.on("load", function() {
             'circle-stroke-color': '#4d4d4d',
             'circle-stroke-width': 0
         }
-    });
-    // Add the third new layer
-    map.addLayer({
-      'id': 'idle_production_capacity',
-          'type': 'circle',
-          'source': {
-              'type': 'geojson',
-              'data': '../data/idle_production_capacity.geojson'
+  });
+  // Add the third new layer
+  map.addLayer({
+    'id': 'idle_production_capacity',
+        'type': 'circle',
+        'source': {
+            'type': 'geojson',
+            'data': '../data/idle_production_capacity.geojson'
           },
           'opacity': 0,
           'paint': {
-               'circle-radius': ['number', ['get', 'FACTORIES'], 1, 2, 3, 9, 34, 55],
-               'circle-color': '#b752ff',
-               'circle-opacity': 0.8,
-               'circle-stroke-width': 0.5,
-               'circle-stroke-color': '#4d4d4d'
-             }
-      });
-      // Add the fourth new layer
-      map.addLayer({
-        'id': 'who_spokes',
-            'type': 'fill',
-            'source': {
-                'type': 'geojson',
-                'data': '../data/who_spokes.geojson'
-            },
-            'opacity': 0,
-            'paint': {
-              'fill-color': '#fe8616'
+              'circle-radius': ['number', ['get', 'FACTORIES'], 1, 2, 3, 9, 34, 55],
+              'circle-color': '#b752ff',
+              'circle-opacity': 0.8,
+              'circle-stroke-width': 0.5,
+              'circle-stroke-color': '#4d4d4d'
             }
-      });
+  });
+  // Add the fourth new layer
+  map.addLayer({
+    'id': 'who_spokes',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': '../data/who_spokes.geojson'
+        },
+        'opacity': 0,
+        'paint': {
+          'fill-color': '#fe8616'
+        }
+  });
 
-      // Add the fifth new layer
-      map.addLayer({
-        'id': 'who_instruction',
-            'type': 'fill',
-            'source': {
-                'type': 'geojson',
-                'data': '../data/who_instruction.geojson'
-            },
-            'opacity': 0,
-            'paint': {
-              'fill-color': '#ff6bdc'
-            }
-      });
+  // Add the fifth new layer
+  map.addLayer({
+    'id': 'who_instruction',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': '../data/who_instruction.geojson'
+        },
+        'opacity': 0,
+        'paint': {
+          'fill-color': '#ff6bdc'
+        }
+  });
 
     if (config.use3dTerrain) {
         map.addSource('mapbox-dem', {
