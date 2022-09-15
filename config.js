@@ -146,7 +146,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'What is being done to combat vaccine inequality?',
-            image: './images/free-the-vaccine-big-pharma-covid19-monopolies.jpg',
+            image: '/images/free-the-vaccine-big-pharma-covid19-monopolies.jpg',
             description: 'Efforts to increase access to vaccines have primarily revolved around two distinct approaches.<p>1) Distribution angle: COVAX, the United Nations-backed public-private partnership to encourage vaccine donations to poor governments, has <a href="https://peoplesvaccine.org/resources/media-releases/g7/" target="_blank">fallen far short</a> of its own targets, leading critics to declare the charity model a failure.<p>2) Production angle: A campaign to compel the World Trade Organization (WTO) to temporarily remove intellectual property (IP) barriers was recently defeated by a handful of rich governments, but several other initiatives are underway at the World Health Organization (WHO) and at national and cross-national levels to share vaccine formulas, transfer technology, and increase generic manufacturing.',
             location: {
                 center: [10.55606, 35.19720],
