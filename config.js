@@ -716,9 +716,9 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'D) Cuba’s public biotech sector',
-            image: '',
             description: 'Cuba’s thriving public biotech sector, which has <a href="https://www.commondreams.org/news/2021/11/24/cubas-homegrown-covid-19-vaccines-poised-protect-millions-poor-nations" target="_blank">developed</a> two highly effective vaccines despite the <a href="https://www.commondreams.org/news/2022/01/19/bank-blocks-donations-supporting-cuban-effort-vaccinate-world" target="_blank">added challenges</a> created by a 60 year-long U.S. embargo, provides a striking example of an alternative model for scientific research that puts people over profits. The island has begun exporting its homegrown doses and has agreed to <a href="https://www.commondreams.org/news/2022/01/25/historic-turning-point-cuba-issues-plan-vaccine-internationalism" target="_blank">share</a> its recipes and technical information with impoverished nations abandoned by Big Pharma and wealthy countries, thus demonstrating the power of decommodified medicine.<p>Unlike the mRNA jabs produced by Pfizer and Moderna, Cuba opted to make vaccines that rely on a more traditional protein-based technology. These shots can be stored at room temperature, making distribution easier, especially in developing countries and remote areas that lack electricity.',
-            caption: 'Photo: ',
+            image: './images/cuba-covid-vaccine.jpg',
+            caption: 'Photo: A nurse vaccinates an elderly woman against Covid-19 with Cuban vaccine Abdala in Havana on August 2, 2021. (Yamil Lage/AFP via Getty Images)',
             location: {
                 center: [-74.94211, 23.07219 ],
                 zoom: 5.3,
@@ -757,9 +757,9 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'E) Corbevax, the patent-free vaccine',
-            image: '',
             description: 'Another promising example of an internationally collaborative endeavor that prioritizes people’s health above all else is Corbevax—an open-source alternative to Big Pharma’s privatized jabs that has been dubbed “the world’s Covid-19 vaccine.”<p>The protein-based shot—jointly developed by researchers at Texas Children’s Hospital and Baylor College of Medicine—<a href="https://www.texaschildrens.org/texas-children%E2%80%99s-hospital-and-baylor-college-medicine-covid-19-vaccine-technology-secures-emergency" target="_blank">received</a> emergency use authorization from India in late December 2021. Its creators immediately <a href="https://twitter.com/PeterHotez/status/1475839914910666767" target="_blank">transferred</a> the underlying technology to the Indian pharmaceutical firm Biological E. Limited and other drug manufacturers in Indonesia, Bangladesh, and Botswana, with the objective of facilitating the production and distribution of millions of doses per month in “underserved countries.”<p>“We’re not trying to make money,” Dr. Peter Hotez said at the time. “We just want to see people get vaccinated,” he added, echoing Jonas Salk, the virologist who famously refused to patent his polio vaccine, comparing it to the sun.',
-            caption: 'Photo: ',
+            image: './images/corbevax-patent-free-vaccine.jpg',
+            caption: 'Photo: Maria Elena Bottazzi and Peter Hotez of Texas Children’s Hospital and Baylor College of Medicine spearheaded the development of Corbevax, a patent-free Covid-19 vaccine. (Texas Medical Center)',
             location: {
                 center: [-94.58586, 31.11613],
                 zoom: 5,
