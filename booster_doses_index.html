@@ -192,7 +192,7 @@
         'source': 'geojson', // refers to source above
         'layout': {},
         'paint': {
-          'fill-color': ['step', ['get', 'total_boosters_per_hundred'], '#eff3ff', 0, '#eff3ff', 14, '#bdd7e7', 36, '#6baed6', 57, '#3182bd', 76, '#08519c'],
+          'fill-color': ['step', ['get', 'total_boosters_per_hundred'], '#f1eef6', 14, '#d7b5d8', 36, '#df65b0', 57, '#dd1c77', 76, '#980043'],
           'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], !1], 1.0, ['case', ["==", ["get", "total_boosters_per_hundred"], null], 0.0, 0.7]],
         }
       });
