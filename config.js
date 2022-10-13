@@ -57,12 +57,106 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'vaxrates',
+            id: 'vaxrates1',
             alignment: 'full',
             hidden: false,
             title: '',
             image: '',
-            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="vax_index.html" title="global-covid-19-vaccine-apartheid" style="border:none;"></iframe>',
+            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="partially_vax_index.html" style="border:none;"></iframe>',
+            caption: '',
+            location: {
+                center: [10.55606, 35.19720],
+                zoom: 1.25,
+                pitch: 0,
+                bearing: 0,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting
+                // to pan.
+                //speed: 2, // make the flying slow
+                //curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:'',
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
+            ],
+            onChapterExit: []
+        },
+        {
+            id: 'vaxrates2',
+            alignment: 'full',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="fully_vax_index.html" style="border:none;"></iframe>',
+            caption: '',
+            location: {
+                center: [10.55606, 35.19720],
+                zoom: 1.25,
+                pitch: 0,
+                bearing: 0,
+                // flyTo additional controls-
+                // These options control the flight curve, making it move
+                // slowly and zoom out almost completely before starting
+                // to pan.
+                //speed: 2, // make the flying slow
+                //curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:'',
+            onChapterEnter: [
+              {
+                  layer: 'vaccination_rates',
+                  opacity: 0
+              },
+              {
+                  layer: 'support_trips_waiver',
+                  opacity: 0
+              },
+              {
+                  layer: 'idle_production_capacity',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_spokes',
+                  opacity: 0
+              },
+              {
+                  layer: 'who_instruction',
+                  opacity: 0
+              }
+            ],
+            onChapterExit: []
+        },
+        {
+            id: 'vaxrates3',
+            alignment: 'full',
+            hidden: false,
+            title: '',
+            image: '',
+            description: '<iframe class="iframe" width=100% height='+ window.innerHeight +' src="booster_doses_index.html" style="border:none;"></iframe>',
             caption: '',
             location: {
                 center: [10.55606, 35.19720],
