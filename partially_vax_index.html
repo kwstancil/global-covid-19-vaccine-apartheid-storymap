@@ -192,8 +192,8 @@
         'source': 'geojson', // refers to source above
         'layout': {},
         'paint': {
-          'fill-color': ['step', ['get', 'people_fully_vaccinated_per_hundred'], '#eff3ff', 0, '#eff3ff', 14, '#bdd7e7', 36, '#6baed6', 57, '#3182bd', 76, '#08519c'],
-          'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], !1], 1.0, ['case', ["==", ["get", "people_fully_vaccinated_per_hundred"], null], 0.0, 0.7]],
+          'fill-color': ['step', ['get', 'people_vaccinated_per_hundred'], '#eff3ff', 0, '#eff3ff', 14, '#bdd7e7', 36, '#6baed6', 57, '#3182bd', 76, '#08519c'],
+          'fill-opacity': ['case', ['boolean', ['feature-state', 'hover'], !1], 1.0, ['case', ["==", ["get", "people_vaccinated_per_hundred"], null], 0.0, 0.7]],
         }
       });
     }; // end addSources();
@@ -229,7 +229,7 @@
         // for each object in each array...
         for (const a in eachArray) {
           // if the date is less than the selected date and the fully vaxed props are present...
-          if (eachArray[a].date <= date && eachArray[a].people_fully_vaccinated_per_hundred !== "") {
+          if (eachArray[a].date <= date && eachArray[a].people_vaccinated_per_hundred !== "") {
             // push the object to the filteredData array
             filteredData.push(eachArray[a]);
           };
@@ -261,7 +261,7 @@
             location: mostRecentObject.location,
             iso_code: mostRecentObject.iso_code,
             date: mostRecentObject.date,
-            people_fully_vaccinated_per_hundred: parseFloat(mostRecentObject.people_fully_vaccinated_per_hundred)
+            people_vaccinated_per_hundred: parseFloat(mostRecentObject.people_vaccinated_per_hundred)
           });
           // push the returned object to the initProps array
           initProps.push(obj);
@@ -281,7 +281,7 @@
           location: '',
           iso_code: '',
           date: '',
-          people_fully_vaccinated_per_hundred: null
+          people_vaccinated_per_hundred: null
         });
         // iterate through the initProps array
         for (const f in initProps) {
@@ -292,7 +292,7 @@
               location: initProps[f].location,
               iso_code: initProps[f].iso_code,
               date: initProps[f].date,
-              people_fully_vaccinated_per_hundred: initProps[f].people_fully_vaccinated_per_hundred
+              people_vaccinated_per_hundred: initProps[f].people_vaccinated_per_hundred
             });
           }
         };
@@ -410,7 +410,7 @@
       // get the popup defined above
       popup
         .setLngLat(e.lngLat) // the location of the cursor
-        .setHTML('<b>' + props.location + '</b><hr>Date: ' + props.date + '<br>' + props.people_fully_vaccinated_per_hundred + '/100 fully vaccinated') // feed the popup the prop info
+        .setHTML('<b>' + props.location + '</b><hr>Date: ' + props.date + '<br>' + props.people_vaccinated_per_hundred + '/100 partially vaccinated') // feed the popup the prop info
         .addTo(map) // add the popup to the map
 
     });
