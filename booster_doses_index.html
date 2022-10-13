@@ -90,7 +90,7 @@
     </div>
     <!-- the slider accepts a range of julian day numbers starting from 2459197 at intervals of 1 day
     the max and value will be defined with the most recent date in the javascript below -->
-    <input id='slider' class='row' type='range' min='2459197' max='' step='1' value='' />
+    <input id='slider' class='row' type='range' min='2459428' max='' step='1' value='' />
   </div>
 
   <!-- mapbox-gl.js library -->
@@ -113,7 +113,7 @@
     // set the max slider value to today's julian day number
     document.getElementById('active-date').value = tJulDate;
     document.getElementById('slider').max = tJulDate;
-    document.getElementById('slider').value = 2021-08-01;
+    document.getElementById('slider').value = 2021-07-01;
 
     // define the initial slider-selected date
     const cursoryDate = document.getElementById('slider').value;
