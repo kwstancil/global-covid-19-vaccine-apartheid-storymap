@@ -315,17 +315,6 @@
       projection: config.projection
     });
 
-    // create a popup without adding to map
-    let popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-    });
-
-    // define initial hover state
-    let hoveredStateId = null;
-    let factoryId = null;
-    let nameId = null;
-
     // Create a inset map if enabled in config.js
     if (config.inset) {
       var insetMap = new mapboxgl.Map({
@@ -416,35 +405,37 @@
       });
 
       // Create a popup, but don't add it to the map yet.
-      const popup = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
+      const popup1 = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
       });
 
       map.on('mouseenter', 'idle_production_capacity', (e) => {
-        // Change the cursor style as a UI indicator.
-        map.getCanvas().style.cursor = 'pointer';
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = 'pointer';
 
-        // Copy coordinates array.
-        const coordinates = e.features[0].geometry.coordinates.slice();
-        const description = e.features[0].properties.FACTORIES;
-        const country = e.features[0].properties.ADMIN;
+      // Copy coordinates array.
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const factories = e.features[0].properties.FACTORIES;
+      const country = e.features[0].properties.ADMIN;
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
+      // Ensure that if the map is zoomed out such that multiple
+      // copies of the feature are visible, the popup appears
+      // over the copy being pointed to.
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
 
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup.setLngLat(coordinates).setHTML('Number of qualified drugmakers denied access to vaccine tech in ' +country +': ' +description).addTo(map);
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup1.setLngLat(coordinates)
+      .setHTML('Number of qualified drugmakers denied access to vaccine tech in ' + country + ': ' +factories)
+      .addTo(map);
       });
 
       map.on('mouseleave', 'idle_production_capacity', () => {
-        map.getCanvas().style.cursor = '';
-        popup.remove();
+      map.getCanvas().style.cursor = '';
+      popup1.remove();
       });
 
       // Add the fourth new layer
@@ -460,6 +451,7 @@
           'fill-color': '#fe8616'
         }
       });
+
 
       // Add the fifth new layer
       map.addLayer({
@@ -700,129 +692,129 @@
     //
     // });
 
-    // fire a function on a mousemove and feed it the geojson we gave an id of 'idle_production_capacity'
-    map.on('mousemove', 'idle_production_capacity', (e) => {
-
-      // change the cursor style as a UI indicator.
-      map.getCanvas().style.cursor = 'pointer';
-
-      // reset the hover state id on mouse move so the layer knows when to change opacity
-      if (e.features.length > 0) {
-        if (factoryId !== null) {
-          map.setFeatureState({
-            source: 'composite',
-            sourceLayer: 'idle_production_capacity',
-            id: factoryId
-          }, {
-            hover: false
-          });
-        }
-        factoryId = e.features[0].id;
-        map.setFeatureState({
-          source: 'composite',
-          sourceLayer: 'idle_production_capacity',
-          id: factoryId
-        }, {
-          hover: true
-        });
-      }
-
-      // define the layer properties
-      // with "e.features[0].properties," you have access to all of the properties from the initial geojson layer
-      let props = e.features[0].properties;
-
-      // get the popup defined above
-      popup
-        .setLngLat(e.lngLat) // the location of the cursor
-        .setHTML('<b>' + props.ADMIN + '</b><br>Number of qualified drugmakers denied access to vaccine tech: ' + props.FACTORIES) // feed the popup the prop info
-      //.addTo(map) // add the popup to the map
-
-    });
-
-    // when you mouse off the layer...
-    map.on('mouseleave', 'idle_production_capacity', () => {
-
-      // change the cursor style back to initial setting
-      map.getCanvas().style.cursor = '';
-
-      // reset the hover state id
-      if (factoryId !== null) {
-        map.setFeatureState({
-          source: 'composite',
-          sourceLayer: 'idle_production_capacity',
-          id: factoryId
-        }, {
-          hover: false
-        });
-      }
-      factoryId = null;
-
-      // and remove the popup
-      popup.remove();
-
-    });
-
-    // fire a function on a mousemove and feed it the geojson we gave an id of 'who_spokes'
-    map.on('mousemove', 'who_spokes', (e) => {
-
-      // change the cursor style as a UI indicator.
-      map.getCanvas().style.cursor = 'pointer';
-
-      // reset the hover state id on mouse move so the layer knows when to change opacity
-      if (e.features.length > 0) {
-        if (nameId !== null) {
-          map.setFeatureState({
-            source: 'composite',
-            sourceLayer: 'who_spokes',
-            id: nameId
-          }, {
-            hover: false
-          });
-        }
-        nameId = e.features[0].id;
-        map.setFeatureState({
-          source: 'composite',
-          sourceLayer: 'who_spokes',
-          id: nameId
-        }, {
-          hover: true
-        });
-      }
-
-      // define the layer properties
-      // with "e.features[0].properties," you have access to all of the properties from the initial geojson layer
-      let props = e.features[0].properties;
-
-      // get the popup defined above
-      popup
-        .setLngLat(e.lngLat) // the location of the cursor
-        .setHTML('<b>' + props.BRK_NAME + '</b><br>Participating manufacturer: ' + props.FACTORY) // feed the popup the prop info
-      //.addTo(map) // add the popup to the map
-
-    });
-
-    // when you mouse off the layer...
-    map.on('mouseleave', 'who_spokes', () => {
-
-      // change the cursor style back to initial setting
-      map.getCanvas().style.cursor = '';
-
-      // reset the hover state id
-      if (nameId !== null) {
-        map.setFeatureState({
-          source: 'composite',
-          sourceLayer: 'who_spokes',
-          id: nameId
-        }, {
-          hover: false
-        });
-      }
-      nameId = null;
-
-      // and remove the popup
-      popup.remove();
-
-    });
+    // // fire a function on a mousemove and feed it the geojson we gave an id of 'idle_production_capacity'
+    // map.on('mousemove', 'idle_production_capacity', (e) => {
+    //
+    //   // change the cursor style as a UI indicator.
+    //   map.getCanvas().style.cursor = 'pointer';
+    //
+    //   // reset the hover state id on mouse move so the layer knows when to change opacity
+    //   if (e.features.length > 0) {
+    //     if (factoryId !== null) {
+    //       map.setFeatureState({
+    //         source: 'composite',
+    //         sourceLayer: 'idle_production_capacity',
+    //         id: factoryId
+    //       }, {
+    //         hover: false
+    //       });
+    //     }
+    //     factoryId = e.features[0].id;
+    //     map.setFeatureState({
+    //       source: 'composite',
+    //       sourceLayer: 'idle_production_capacity',
+    //       id: factoryId
+    //     }, {
+    //       hover: true
+    //     });
+    //   }
+    //
+    //   // define the layer properties
+    //   // with "e.features[0].properties," you have access to all of the properties from the initial geojson layer
+    //   let props = e.features[0].properties;
+    //
+    //   // get the popup defined above
+    //   popup
+    //     .setLngLat(e.lngLat) // the location of the cursor
+    //     .setHTML('<b>' + props.ADMIN + '</b><br>Number of qualified drugmakers denied access to vaccine tech: ' + props.FACTORIES) // feed the popup the prop info
+    //   //.addTo(map) // add the popup to the map
+    //
+    // });
+    //
+    // // when you mouse off the layer...
+    // map.on('mouseleave', 'idle_production_capacity', () => {
+    //
+    //   // change the cursor style back to initial setting
+    //   map.getCanvas().style.cursor = '';
+    //
+    //   // reset the hover state id
+    //   if (factoryId !== null) {
+    //     map.setFeatureState({
+    //       source: 'composite',
+    //       sourceLayer: 'idle_production_capacity',
+    //       id: factoryId
+    //     }, {
+    //       hover: false
+    //     });
+    //   }
+    //   factoryId = null;
+    //
+    //   // and remove the popup
+    //   popup.remove();
+    //
+    // });
+    //
+    // // fire a function on a mousemove and feed it the geojson we gave an id of 'who_spokes'
+    // map.on('mousemove', 'who_spokes', (e) => {
+    //
+    //   // change the cursor style as a UI indicator.
+    //   map.getCanvas().style.cursor = 'pointer';
+    //
+    //   // reset the hover state id on mouse move so the layer knows when to change opacity
+    //   if (e.features.length > 0) {
+    //     if (nameId !== null) {
+    //       map.setFeatureState({
+    //         source: 'composite',
+    //         sourceLayer: 'who_spokes',
+    //         id: nameId
+    //       }, {
+    //         hover: false
+    //       });
+    //     }
+    //     nameId = e.features[0].id;
+    //     map.setFeatureState({
+    //       source: 'composite',
+    //       sourceLayer: 'who_spokes',
+    //       id: nameId
+    //     }, {
+    //       hover: true
+    //     });
+    //   }
+    //
+    //   // define the layer properties
+    //   // with "e.features[0].properties," you have access to all of the properties from the initial geojson layer
+    //   let props = e.features[0].properties;
+    //
+    //   // get the popup defined above
+    //   popup
+    //     .setLngLat(e.lngLat) // the location of the cursor
+    //     .setHTML('<b>' + props.BRK_NAME + '</b><br>Participating manufacturer: ' + props.FACTORY) // feed the popup the prop info
+    //   //.addTo(map) // add the popup to the map
+    //
+    // });
+    //
+    // // when you mouse off the layer...
+    // map.on('mouseleave', 'who_spokes', () => {
+    //
+    //   // change the cursor style back to initial setting
+    //   map.getCanvas().style.cursor = '';
+    //
+    //   // reset the hover state id
+    //   if (nameId !== null) {
+    //     map.setFeatureState({
+    //       source: 'composite',
+    //       sourceLayer: 'who_spokes',
+    //       id: nameId
+    //     }, {
+    //       hover: false
+    //     });
+    //   }
+    //   nameId = null;
+    //
+    //   // and remove the popup
+    //   popup.remove();
+    //
+    // });
   </script>
 
 </body>
