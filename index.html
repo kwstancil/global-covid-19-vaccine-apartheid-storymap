@@ -452,6 +452,39 @@
         }
       });
 
+      // Create a popup, but don't add it to the map yet.
+      const popup2 = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+      });
+
+      map.on('click', 'who_spokes', (e) => {
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = 'pointer';
+
+      // Copy coordinates array.
+      const coordinates = e.features[0].geometry.polygon;
+      const manufacturer = e.features[0].properties.FACTORY;
+      const country = e.features[0].properties.ADMIN;
+
+      // Ensure that if the map is zoomed out such that multiple
+      // copies of the feature are visible, the popup appears
+      // over the copy being pointed to.
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup2.setLngLat(coordinates)
+      .setHTML('Name of participating manufacturer in ' + country + ': ' +manufacturer)
+      .addTo(map);
+      });
+
+      map.on('mouseleave', 'who_spokes', () => {
+      map.getCanvas().style.cursor = '';
+      popup2.remove();
+      });
 
       // Add the fifth new layer
       map.addLayer({
@@ -465,6 +498,40 @@
         'paint': {
           'fill-color': '#ff6bdc'
         }
+      });
+
+      // Create a popup, but don't add it to the map yet.
+      const popup3 = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+      });
+
+      map.on('click', 'who_spokes', (e) => {
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = 'pointer';
+
+      // Copy coordinates array.
+      const coordinates = e.features[0].geometry.polygon;
+      const manufacturer = e.features[0].properties.FACTORY;
+      const country = e.features[0].properties.ADMIN;
+
+      // Ensure that if the map is zoomed out such that multiple
+      // copies of the feature are visible, the popup appears
+      // over the copy being pointed to.
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup3.setLngLat(coordinates)
+      .setHTML('Name of participating manufacturer in ' + country + ': ' +manufacturer)
+      .addTo(map);
+      });
+
+      map.on('mouseleave', 'who_spokes', () => {
+      map.getCanvas().style.cursor = '';
+      popup3.remove();
       });
 
       if (config.use3dTerrain) {
